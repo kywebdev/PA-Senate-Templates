@@ -1,0 +1,250 @@
+.theme-1 .tab {
+  position: relative;
+  margin-bottom: -4px;
+  width: 100%;
+  color: $white;
+  overflow: hidden;
+  
+  input {
+	  opacity: 0;
+	  z-index: -1;
+  }
+  label {
+	  position: relative;
+	  display: block;
+	  padding: 0 0 0 1em;
+	  background: $blue-theme-1;
+	  font-weight: bold;
+	  line-height: 3;
+	  cursor: pointer;
+	  transition: all .2s linear;
+	  
+	  &::after {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  display: block;
+		  width: 3em;
+		  height: 3em;
+		  line-height: 3;
+		  text-align: center;
+		  -webkit-transition: all .35s;
+		  transition: all .35s;
+	  }
+	  &:hover {
+		 background-color: rgba($blue-theme-1, .8); 
+	  }
+	}
+}
+.theme-2 .tab {
+  position: relative;
+  margin-bottom: -4px;
+  width: 100%;
+  color: $white;
+  overflow: hidden;
+  
+  input {
+	  opacity: 0;
+	  z-index: -1;
+  }
+	label {
+	  position: relative;
+	  display: block;
+	  padding: 0 0 0 1em;
+	  background: $orange;
+	  font-weight: bold;
+	  line-height: 3;
+	  cursor: pointer;
+	  transition: all .2s linear;
+	  
+	  &::after {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  display: block;
+		  width: 3em;
+		  height: 3em;
+		  line-height: 3;
+		  text-align: center;
+		  -webkit-transition: all .35s;
+		  transition: all .35s;
+	  }
+	  &:hover {
+		 background-color: rgba($orange, .8); 
+	  }
+	}
+}
+.theme-1 .tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: $white;
+  -webkit-transition: max-height .35s;
+  transition: max-height .35s;
+  
+  p {
+	  margin: 25px 30px 29px;
+	}
+}
+.theme-2 .tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: $light-gray-theme-2;
+  -webkit-transition: max-height .35s;
+  transition: max-height .35s;
+  
+  p {
+	  margin: 25px 30px 29px;
+	}
+}
+.tab input:checked ~ .tab-content {
+  max-height: 10em;
+  margin-top: -5px;
+}
+.theme-1 .tab input[type=checkbox] + label::after {
+  content: "+";
+  font-size: 30px;
+  margin-top: -16px;
+  margin-right: -12px;
+  font-weight: normal;
+}
+.theme-2 .tab input[type=checkbox] + label::after {
+  content: "+";
+  font-size: 22px;
+  margin-top: -5px;
+}
+.tab input[type=checkbox]:checked + label::after {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+/* Visual Composer styles */
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+	background-color: $blue-theme-1 !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-1 !important;
+	font-size: 18px !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+	background-color: rgba($blue-theme-1, .8) !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	border: none !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	background-color: $white !important;
+	padding-bottom: 30px !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+	border: none !important;
+	background-color: $blue-theme-1 !important;
+	padding: 10px !important;
+	margin-bottom: 3px !important;
+}
+.theme-1 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-1 !important;
+}
+
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+	background-color: $orange !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+	font-size: 18px !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	border: none !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	background-color: $light-gray-theme-2 !important;
+	padding-bottom: 30px !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+	border: none !important;
+	background-color: $orange !important;
+	padding: 10px !important;
+	margin-bottom: 3px !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+}
+.theme-2 .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+	background-color: rgba($orange, .8) !important;
+}
+
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+	background-color: $blue-theme-2 !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+	font-size: 18px !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+	background-color: rgba($blue-theme-2, .8) !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	border: none !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	background-color: $light-gray-theme-2 !important;
+	padding-bottom: 30px !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+	border: none !important;
+	background-color: $blue-theme-2 !important;
+	padding: 10px !important;
+	margin-bottom: 3px !important;
+}
+.theme-2.committee .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+}
+
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+	background-color: $blue-theme-2 !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+	font-size: 18px !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+	background-color: rgba($blue-theme-2, .8) !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	border: none !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before {
+	background-color: $light-gray-theme-2 !important;
+	padding-bottom: 30px !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+	border: none !important;
+	background-color: $blue-theme-2 !important;
+	padding: 10px !important;
+	margin-bottom: 3px !important;
+}
+.theme-2.pasengop .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title>a {
+	color: $white !important;
+	font-family: $body-font-family-theme-2 !important;
+}
+.vc_tta-color-grey.vc_tta-style-classic .vc_active .vc_tta-panel-heading .vc_tta-controls-icon::after, .vc_tta-color-grey.vc_tta-style-classic .vc_active .vc_tta-panel-heading .vc_tta-controls-icon::before, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-controls-icon::after, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-controls-icon::before {
+	border-color: $white !important;
+}
+.vc_tta-shape-rounded.vc_tta-o-shape-group:not(.vc_tta-o-no-fill) .vc_tta-panel:first-child:not(:last-child) .vc_tta-panel-body, .vc_tta-shape-rounded.vc_tta-o-shape-group:not(.vc_tta-o-no-fill) .vc_tta-panel:first-child:not(:last-child) .vc_tta-panel-heading {
+	border-radius: 0px;
+}
+.vc_tta-shape-rounded.vc_tta-o-shape-group:not(.vc_tta-o-no-fill) .vc_tta-panel:last-child:not(:first-child) .vc_tta-panel-body, .vc_tta-shape-rounded.vc_tta-o-shape-group:not(.vc_tta-o-no-fill) .vc_tta-panel:last-child:not(:first-child) .vc_tta-panel-heading {
+	border-radius: 0px;
+}
+.vc_tta.vc_tta-controls-align-left .vc_tta-panel-heading, .vc_tta.vc_tta-controls-align-left .vc_tta-tabs-container {
+	border-radius: 0px !important;
+}
+.vc_tta-shape-rounded:not(.vc_tta-o-no-fill) .vc_tta-panel.vc_active .vc_tta-panel-body {
+	border-radius: 0px !important;
+}

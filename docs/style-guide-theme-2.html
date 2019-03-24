@@ -1,0 +1,1590 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PA Senate Style Guide Design 2</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="js/psrc.js"></script>
+<script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': -50 + $target.offset().top
+	    }, 900, 'swing', function () {
+	    });
+	});
+});
+</script>
+</head>
+
+<body class="theme-2 style-guide">
+<div id="top"></div>
+<header class="site-header">
+	<div class="container">
+    	<h1>PA Senate Style Guidelines</h1>
+        	<a href="index-1.html"><button class="design1">See Design 1</button></a>
+    </div>
+</header>
+<div class="container">
+<div class="sidebar">
+    <nav>
+        <ul>
+            <li><a href="#color">Color Palette</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#blocks">Blocks</a></li>
+            <li><a href="#buttons">Links &amp; Buttons</a></li>
+            <li><a href="#icons">Icons</a></li>
+            <li><a href="#forms">Form Fields</a></li>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#footer">Footer</a></li>
+            <li><a href="#callouts">Callouts</a></li>
+            <li><a href="#calendar">Events Calendar</a></li>
+            <li><a href="#news">News Articles</a></li>
+            <li><a href="#meetings">Meeings &amp; Hearings</a></li>
+            <li><a href="#accordions">Accordions</a></li>
+            <li><a href="#slider">Tele-Town Halls Slider</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="mainContent">
+	<div class="container">
+    	<p>These styles should be used for all committee/caucus sites and can also be used on senator sites. To see alternate senator styles, check out <a href="index-1.html">this design</a>.</p>
+        
+<!-- COLOR PALETTE -->
+        
+        <h1 id="color">Color Palette</h1>
+        	<p>This is the recommended color scheme for this design.</p>
+            <div class="module">
+                <div class="blue-theme-2"></div>
+                <div class="details">
+                    <p><span class="bold">Blue</span></p><br />
+                    <pre>HEX: #076da5
+RGB: 7, 109, 165
+CSS: $blue</pre>
+                </div>
+            </div>
+            <div class="module">
+                <div class="orange"></div>
+                <div class="details">
+                    <p><span class="bold">Orange</span></p><br />
+                    <pre>HEX: #c17134
+RGB: 193, 113, 52
+CSS: $orange</pre>
+                </div>
+            </div>
+            <div class="module">
+                <div class="dark-gray"></div>
+                <div class="details">
+                    <p><span class="bold">Dark Gray</span></p><br />
+                    <pre>HEX: #303030
+RGB: 48, 48, 48
+CSS: $dark-gray</pre>
+                </div>
+            </div>
+            <div class="module">
+                <div class="gray-theme-2"></div>
+                <div class="details">
+                    <p><span class="bold">Gray</span></p><br />
+                    <pre>HEX: #5b5b5b
+RGB: 91, 91, 91
+CSS: $gray</pre>
+                </div>
+            </div>
+            <div class="module">
+                <div class="light-gray-theme-2"></div>
+                <div class="details">
+                    <p><span class="bold">Light Gray</span></p><br />
+                    <pre>HEX: #ededed
+RGB: 237, 237, 237
+CSS: $light-gray</pre>
+                </div>
+            </div>
+            <div class="module">
+                <div class="white"></div>
+                <div class="details">
+                    <p><span class="bold">White</span></p><br />
+                    <pre>HEX: #ffffff
+RGB: 255, 255, 255
+CSS: $white</pre>
+                </div>
+            </div>
+            
+<!-- TYPOGRAPHY -->
+            
+        <h1 id="typography">Typography</h1>
+        	<p>The font families used in this design are <span class="bold">Bitter</span>, a serif font used for headings, and <span class="bold">Source Sans Pro</span>, a sans-serif font used for body copy. Both are Google Fonts.</p>
+            	<div class="module">
+                	<h1>Heading 1</h1>
+                    <div class="details">
+                        <pre>h1 {
+  color: $blue;
+  font-family: 'Bitter', serif;
+  font-size: 36px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  clear: both;
+  
+  &:first-child {
+   padding-top: 0px; 
+  }
+}</pre>
+                    </div>
+                </div>
+                <div class="module">
+                	<h2 style="line-height:43px; padding-top:0px;">Heading 2</h2>
+                    <div class="details">
+                        <pre>h2 {
+  color: $orange;
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}</pre>
+                    </div>
+                </div>
+                <div class="module">
+                	<h3 style="line-height:45px; padding-top:0px;">Heading 3</h3>
+                    <div class="details">
+                        <pre>h3 {
+  color: $dark-gray;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}</pre>
+                    </div>
+                </div>
+                <br class="clear" />
+                <p>This is some paragraph text.</p>
+                <div class="details">
+                    <pre>p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-gray;
+}</pre>
+                </div>
+                <br />
+                <p><span class="bold">Example:</span></p>
+                	<h1>Heading 1</h1>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu nisl, vehicula vitae quam eu, consectetur auctor est. Mauris ultricies, mi sed euismod ullamcorper, leo dui molestie lorem, in aliquam mi nisi a ligula. Nulla facilisi. Vivamus rutrum felis at lectus pulvinar, id ultrices nisl imperdiet. Pellentesque lobortis ligula et ipsum laoreet, et semper arcu tincidunt. Nulla facilisi. Nullam semper ex lectus, quis lacinia odio scelerisque et. Vestibulum condimentum tortor ac tempor malesuada. Fusce ut lacus in justo scelerisque congue eu eu eros. Integer maximus rhoncus dui. Aliquam erat volutpat. Ut in lacus justo.</p>
+                    <h2>Heading 2</h2>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu nisl, vehicula vitae quam eu, consectetur auctor est. Mauris ultricies, mi sed euismod ullamcorper, leo dui molestie lorem, in aliquam mi nisi a ligula. Nulla facilisi. Vivamus rutrum felis at lectus pulvinar, id ultrices nisl imperdiet. Pellentesque lobortis ligula et ipsum laoreet, et semper arcu tincidunt. Nulla facilisi. Nullam semper ex lectus, quis lacinia odio scelerisque et. Vestibulum condimentum tortor ac tempor malesuada. Fusce ut lacus in justo scelerisque congue eu eu eros. Integer maximus rhoncus dui. Aliquam erat volutpat. Ut in lacus justo.</p>
+                    <h3>Heading 3</h3>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu nisl, vehicula vitae quam eu, consectetur auctor est. Mauris ultricies, mi sed euismod ullamcorper, leo dui molestie lorem, in aliquam mi nisi a ligula. Nulla facilisi. Vivamus rutrum felis at lectus pulvinar, id ultrices nisl imperdiet. Pellentesque lobortis ligula et ipsum laoreet, et semper arcu tincidunt. Nulla facilisi. Nullam semper ex lectus, quis lacinia odio scelerisque et. Vestibulum condimentum tortor ac tempor malesuada. Fusce ut lacus in justo scelerisque congue eu eu eros. Integer maximus rhoncus dui. Aliquam erat volutpat. Ut in lacus justo.</p>
+        
+<!-- BLOCKS -->
+
+		<h1 id="blocks">Blocks</h1>
+        	<p>Blocks are boxes with a gray colored background used to organize and call attention to the content within them.</p>
+        	<div class="one-block">
+            	<p>This is a standard block.</p>
+            </div>
+            <div class="block-container">
+                <div class="half-block">
+                    <p>This is a half block. It takes up half of the parent container.</p>
+                </div>
+                <div class="half-block">
+                    <p>This is a half block. It takes up half of the parent container.</p>
+                </div>
+            </div>
+            <div class="block-container">
+                <div class="third-block">
+                    <p>This is a third block. It takes up one-third of the parent container.</p>
+                </div>
+                <div class="third-block">
+                    <p>This is a third block. It takes up one-third of the parent container.</p>
+                </div>
+                <div class="third-block">
+                    <p>This is a third block. It takes up one-third of the parent container.</p>
+                </div>
+            </div>
+            <div class="one-block fancy">
+            	<p>This block has a class of fancy, which adds a white line within the block.</p>
+            </div>
+            <h2>Social Media Blocks</h2>
+            	<p>Senator sites use a one-thirds column layout to display their social media feeds and a featured video. Here's an example of what this would look like.</p>
+                <div class="two-thirds">
+                	<h3 class="center">Main content</h3>
+                </div>
+                <div class="block-container one-third">
+                    <div class="third-block">
+                        <h3>Tweets by <span class="tw-user">@senbartolotta</span></h3>
+                            <div class="media tw-feed">
+                                <span class="fa-stack fa-2x"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-twitter fa-stack-1x fa-inverse"></span></span>
+                            </div>
+                    </div>
+                    <div class="third-block">
+                        <h3>Featured Video</h3>
+                            <div class="feat-vid">
+                                <div class="embed-container">
+                                    <iframe src="https://player.vimeo.com/video/87110435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <p>Sen. Bartolotta Introduces Constitution Week Resolution</p>
+                            <div class="center">
+                            	<a href=""><button class="cta">Watch More</button></a>
+                            </div>
+                    </div>
+                    <div class="third-block">
+                        <h3>Facebook Feed</h3>
+                            <div class="media fb-feed">
+                                <span class="fa-stack fa-2x"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-facebook fa-stack-1x fa-inverse"></span></span>
+                            </div>
+                    </div>
+                </div>
+                <br class="clear" />
+                <h2>Audio/Video Blocks</h2>
+                	<div class="audio-video">
+                        <div class="av-block">
+                            <div class="av-video">
+                                <div class="embed-container">
+                                    <iframe src="https://player.vimeo.com/video/87110435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="block-container">
+                                <div class="one-block">
+                                    <h2><a href="">75th Pearl Harbor Day Remembrance</a></h2>
+                                    <p><span class="bold">December 7, 2016</span><br />
+                                    Capitol ceremony recognizing the 75th anniversary of the Japanese attack on Pearl Harbor. <a href="" class="read-more">[Read More]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-block">
+                            <div class="av-video">
+                                <div class="av-audio">
+                                <div class="embed-container">
+                                	<span class="fa fa-volume-up fa-5x"></span>
+                                	<audio src="media/placeholder.mp3" controls>
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="block-container">
+                                <div class="one-block">
+                                    <h2><a href="">WAGNER HOLDS PRESS CONFERENCE</a></h2>
+                                    <p><span class="bold">December 5, 2016</span><br />
+                                    Today Senator Scott Wagner (R-York) held a press conference in the Capitol Rotunda to announce that he has filed a Right-to-Know request with the Pennsylvania Department of Labor & Industry requesting various records related to the closing of Unemployment Compensation call centers. <a href="" class="read-more">[Read More]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-block">
+                            <div class="av-audio">
+                                <div class="embed-container">
+                                	<span class="fa fa-volume-up fa-5x"></span>
+                                	<audio src="media/placeholder.mp3" controls>
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="block-container">
+                                <div class="one-block">
+                                    <h2><a href="">Public Hearing</a></h2>
+                                    <p><span class="bold">November 21, 2016</span><br />
+                                    PA Public School Building Construction & Reconstruction Advisory (PlanCon) Committee - November 21, 2016 <a href="" class="read-more">[Read More]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-block">
+                            <div class="av-video">
+                                <div class="embed-container">
+                                    <iframe src="https://player.vimeo.com/video/87110435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="block-container">
+                                <div class="one-block">
+                                    <h2><a href="">To review emergency preparedness and response measures for natural...</a></h2>
+                                    <p><span class="bold">November 10, 2016</span><br />
+                                    JOINT HEARING - Senate Veterans Affairs and Emergency Preparedness Committee AND House Veterans Affairs and Emergency Preparedness Committee - November 16, 2016 <a href="" class="read-more">[Read More]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- LINKS & BUTTONS -->
+        
+        <h1 id="buttons">Links &amp; Buttons</h1>
+        	<p>This is a <a href="">regular link</a>, used primarily within body copy.</p>
+            <div class="details">
+                <pre>a {
+  color: $body-link-color;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+  }
+}</pre>
+            </div>
+            <br />
+            <p>At the end of this paragraph is a Read More link. It is bolded so it stands out among the rest of the text. Read More links are used at the end of special modules, such as news, audio/video, and meetings &amp; hearings snippets. <a href="" class="read-more">[Read More]</a></p>
+            <div class="details">
+                <pre>.read-more {
+  color: $body-link-color;
+  text-decoration: none;
+  font-weight: 700 !important;
+  transition: color .2s linear;
+  &:hover {
+    text-decoration: none !important;
+    color: #1685b7;
+  }
+}</pre>
+            </div>
+            <br /><br />
+            <div class="fake-header">
+            	<ul>
+                	<li><a href="">Header link</a></li> 
+                    <li><a href="">Header link</a></li>
+                    <li><a href="">Header link</a></li>
+                </ul>
+            </div>
+            <br />
+            <div class="details">
+                <pre>header {
+  width: 100%;
+  background-color: $blue;
+  padding: 20px 0px;
+  
+  ul {
+    margin: 0px auto;
+    
+    li {
+      display: inline;
+      margin-left: -5px;
+      
+      a {
+        font-size: 16px;
+        color: $white;
+        padding: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none !important;
+        transition: background-color .2s linear;
+        
+        &:hover {
+          background-color: #1685b7;
+        }
+      }
+    }
+  }
+}</pre>
+            </div>
+            <br /><br />
+            <div class="fake-footer">
+            	<ul>
+                	<li><a href="">Footer link</a></li>
+                    <li><a href="">Footer link</a></li>
+                    <li><a href="">Footer link</a></li>
+                </ul>
+            </div>
+            <div class="no-mobile2">
+                	<p class="bold">The footer links do not display on mobile devices. Users can use the hamburger menu fixed to the top of the screen for navigation.</p>
+                </div>
+            <br />
+            <div class="details">
+                <pre>footer {
+  background-color: #e2e2e2;
+  padding: 20px 0px;
+  
+  ul {
+    margin: 0px auto 0px -10px;
+    
+    li {
+      display: inline;
+      
+      a {
+        color: #545454;
+        padding: 24px 20px 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        transition: color .2s linear;
+        
+        &:hover {
+          color: $body-link-color;
+        }
+      }
+    }
+  }
+}</pre>
+            </div>
+            <br /><br />
+            <a href=""><button class="cta">CTA Button</button></a><br /><br />
+            <div class="details">
+                <pre>.cta {
+  display: inline-block;
+  padding: 23px 25px;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color .2s linear;
+  position: relative;
+  z-index: 10;
+  border: 2px solid transparent;
+  
+  &:hover {
+    background-color: #1685b7;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid $white;
+  }
+}</pre>
+            </div>
+            <br /><br />
+            <a href=""><button class="news-btn">Sign up for newsletter button</button></a><br /><br />
+            <div class="details">
+                <pre>.news-btn {
+  padding: 27px 25px;
+  background-color: $gray;
+  color: $white;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color .2s linear;
+  
+  &:hover {
+    background-color: #777777;
+  }
+}</pre>
+            </div>
+            <br /><br />
+            <div class="blocklink">
+                <a href="#top">
+                    <div class="back-to-top">
+                        <span class="fa fa-arrow-up fa-2x"></span>
+                    </div>
+                </a>
+            </div>
+            <br /><br />
+            <div class="details">
+                <pre>.back-to-top {
+  padding: 20px;
+  background-color: rgba($dark-gray, .2);
+  width: 76px;
+  position: relative;
+  z-index: 10;
+  border: 2px solid transparent;
+  transition: background-color .2s linear;
+  
+  &:hover {
+    background-color: rgba($dark-gray, .4);
+  }
+  &:hover:before {
+    border: 4px solid rgba($dark-gray, .4);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 4px solid rgba($dark-gray, .2);
+    transition: border .2s linear;
+  }
+  .fa-arrow-up {
+    color: $light-gray;
+  }
+}</pre>
+            </div>
+            
+<!-- ICONS -->
+            
+        <h1 id="icons">Icons</h1>
+        	<p>All icons are from Font Awesome. Icons are primarily used for social media links in the header and footer, as well as for the back to top arrow fixed to the bottom right side of all pages.</p>
+            <br />
+            <p><span class="bold">Facebook:</span></p>
+            <span class="fa fa-facebook fa-1x"></span>
+            <span class="fa fa-facebook fa-2x"></span>
+            <span class="fa fa-facebook fa-3x"></span>
+            <span class="fa fa-facebook fa-4x"></span>
+            <span class="fa fa-facebook fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-facebook"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <span class="fa fa-facebook-square fa-1x"></span>
+            <span class="fa fa-facebook-square fa-2x"></span>
+            <span class="fa fa-facebook-square fa-3x"></span>
+            <span class="fa fa-facebook-square fa-4x"></span>
+            <span class="fa fa-facebook-square fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-facebook-square"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">Twitter:</span></p>
+            <span class="fa fa-twitter fa-1x"></span>
+            <span class="fa fa-twitter fa-2x"></span>
+            <span class="fa fa-twitter fa-3x"></span>
+            <span class="fa fa-twitter fa-4x"></span>
+            <span class="fa fa-twitter fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-twitter"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <span class="fa fa-twitter-square fa-1x"></span>
+            <span class="fa fa-twitter-square fa-2x"></span>
+            <span class="fa fa-twitter-square fa-3x"></span>
+            <span class="fa fa-twitter-square fa-4x"></span>
+            <span class="fa fa-twitter-square fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-twitter-square"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">Google Plus:</span></p>
+            <span class="fa fa-google-plus fa-1x"></span>
+            <span class="fa fa-google-plus fa-2x"></span>
+            <span class="fa fa-google-plus fa-3x"></span>
+            <span class="fa fa-google-plus fa-4x"></span>
+            <span class="fa fa-google-plus fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-google-plus"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">RSS:</span></p>
+            <span class="fa fa-rss-square fa-1x"></span>
+            <span class="fa fa-rss-square fa-2x"></span>
+            <span class="fa fa-rss-square fa-3x"></span>
+            <span class="fa fa-rss-square fa-4x"></span>
+            <span class="fa fa-rss-square fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-rss-square"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">Printer:</span></p>
+            <span class="fa fa-print fa-1x"></span>
+            <span class="fa fa-print fa-2x"></span>
+            <span class="fa fa-print fa-3x"></span>
+            <span class="fa fa-print fa-4x"></span>
+            <span class="fa fa-print fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-print"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">Up Arrow:</span></p>
+            <span class="fa fa-arrow-up fa-1x"></span>
+            <span class="fa fa-arrow-up fa-2x"></span>
+            <span class="fa fa-arrow-up fa-3x"></span>
+            <span class="fa fa-arrow-up fa-4x"></span>
+            <span class="fa fa-arrow-up fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-arrow-up"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p><span class="bold">Circle:</span></p>
+            <span class="fa fa-circle fa-1x"></span>
+            <span class="fa fa-circle fa-2x"></span>
+            <span class="fa fa-circle fa-3x"></span>
+            <span class="fa fa-circle fa-4x"></span>
+            <span class="fa fa-circle fa-5x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-circle"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p>For social icons, include the class <span class="bold">fa-2x</span> in the HTML to ensure icons are the right size.</p>
+            <span class="fa fa-facebook-square fa-2x"></span>
+            <span class="fa fa-twitter-square fa-2x"></span>
+            <span class="fa fa-rss-square fa-2x"></span>
+            <br /><br />
+            <div class="details">
+            	<pre>&lt;span class="fa fa-facebook-square fa-2x"&gt;&lt;&#47;span&gt;
+&lt;span class="fa fa-twitter-square fa-2x"&gt;&lt;&#47;span&gt;
+&lt;span class="fa fa-rss-square fa-2x"&gt;&lt;&#47;span&gt;</pre>
+            </div>
+            <br /><br />
+            <p>For social media icons in articles, you'll need to use Font Awesome's stacking classes in order to get a circle around the icons.  Use the classes <span class="bold">fa-stack-2x</span>, <span class="bold">fa-stack-1x</span>, and <span class="bold">fa-inverse</span> to achieve this look.</p>
+            <div class="article-icons">
+            	<a href="">
+                    <span class="fa-stack">
+                        <span class="fa fa-circle fa-stack-2x fb"></span>
+                        <span class="fa fa-facebook fa-stack-1x fa-inverse"></span>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="fa-stack">
+                        <span class="fa fa-circle fa-stack-2x tw"></span>
+                        <span class="fa fa-twitter fa-stack-1x fa-inverse"></span>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="fa-stack">
+                        <span class="fa fa-circle fa-stack-2x gp"></span>
+                        <span class="fa fa-google-plus fa-stack-1x fa-inverse"></span>
+                    </span>
+                </a>
+                <a href="">
+                    <span class="fa-stack last">
+                        <span class="fa fa-circle fa-stack-2x pr"></span>
+                        <span class="fa fa-print fa-stack-1x fa-inverse"></span>
+                    </span>
+                </a>
+            </div>
+            <br />
+            <div class="details">
+            	<pre>&lt;a href=""&gt;
+  &lt;span class="fa-stack"&gt;&lt;&#47;span&gt;
+    &lt;span class="fa fa-circle fa-stack-2x fb"&gt;&lt;&#47;span&gt;
+    &lt;span class="fa fa-facebook fa-stack-1x fa-inverse"&gt;&lt;&#47;span&gt;
+  &lt;&#47;span&gt;
+&lt;&#47;a&gt;</pre>
+            </div>
+            <br />
+            <div class="details">
+            	<pre>.article-icons {
+  background-color: $light-gray;
+  padding: 15px;
+  width: 201px;
+  
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    .fa-stack {
+      margin-right: 5px;
+    }
+    .last {
+      margin-right: 0px;
+    }
+  }
+  .fb {
+    color: #507cbd;
+  }
+  .tw {
+    color: #64cbee;
+  }
+  .gp {
+    color: #dc4d40;
+  }
+  .pr {
+    color: #9e9e9e;
+  }
+}</pre>
+            </div>
+            
+<!-- FORM FIELDS -->
+            
+        <h1 id="forms">Form Fields</h1>
+            <form class="margin-form">
+            	<div>
+            		<label for="fname">First Name</label><input type="text" id="fname" />
+                </div>
+                <div>
+                	<label for="lname">Last Name</label><input type="text" id="lname" />
+                </div>
+                <br />
+            </form>
+                <div class="details">
+                    <pre>input {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  border: 1px solid $dark-gray;
+  padding: 10px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}</pre>
+                </div>
+                <br /><br />
+            <form>
+                <label for="comments">Questions and Comments</label><textarea id="comments"></textarea>
+            </form>
+            <div class="details">
+                    <pre>textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  border: 1px solid $dark-gray;
+  padding: 10px;
+  height: 200px;
+  resize: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}</pre>
+                </div>
+                <br /><br />
+            <form>
+            	<div>
+                    <label for="state">State</label>
+                    <select id="state">
+                        <option disabled selected>Select One</option>
+                        <option>PA</option>
+                        <option>DE</option>
+                        <option>MD</option>
+                        <option>NY</option>
+                    </select>
+                </div>
+            </form>
+            <br /><br /><br />
+            <div class="details">
+                    <pre>select {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  border: 1px solid $dark-gray;
+  border-radius: 0px;
+  padding: 10px 35px 10px 10px;
+  background: url(../img/double_arrow.png) no-repeat center right $white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}</pre>
+                </div>
+                <br /><br />
+            <form>
+                <input type="checkbox" id="check1" /><label class="show" for="check1">Option 1</label>
+                <input type="checkbox" id="check2" /><label class="show" for="check2">Option 2</label>
+                <input type="checkbox" id="check3" /><label class="show" for="check3">Option 3</label>
+            </form>
+            <br />
+            <div class="details">
+                    <pre>&lt;input type="checkbox" id="check1" &#47;&gt;&lt;label class="show" for="check1"&gt;Option 1&lt;&#47;label&gt;</pre>
+                </div>
+                <br />
+                <div class="details">
+                    <pre>input[type="checkbox"] {
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0px;
+  background-color: white;
+  -webkit-appearance: none;
+  float: left;
+  
+  &:checked {
+    background: url(../img/check.png) no-repeat center center $white;
+  }
+}
+.show {
+  display: table;
+  margin-bottom: 10px;
+}</pre>
+                </div>
+                <br /><br />
+            <form>
+                <input type="radio" name="options" id="opt1" /><label class="show" for="opt1">Option 1</label>
+                <input type="radio" name="options" id="opt2" /><label class="show" for="opt2">Option 2</label>
+                <input type="radio" name="options" id="opt3" /><label class="show" for="opt3">Option 3</label>
+            </form>
+            <br />
+            <div class="details">
+                    <pre>&lt;input type="radio" name="options" id="opt1" &#47;&gt;&lt;label class="show" for="opt1"&gt;Option 1&lt;&#47;label&gt;</pre>
+                </div>
+                <br />
+                <div class="details">
+                    <pre>input[type="radio"] {
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0px;
+  background-color: white;
+  -webkit-appearance: none;
+  float: left;
+  
+  &:checked {
+    background: url(../img/circle.png) no-repeat center center $white;
+  }
+}
+.show {
+  display: table;
+  margin-bottom: 10px;
+}</pre>
+                </div>
+                <br /><br />
+            <form>
+            	<div class="cta">
+                	<input type="submit" value="Submit" />
+                </div>
+            </form>
+            <div class="details">
+                    <pre>&lt;div class="cta"&gt;
+  &lt;input type="submit" value="Submit" &#47;&gt;
+&lt;&#47;div&gt;</pre>
+                </div>
+                <br />
+                <div class="details">
+                    <pre>input[type="submit"] {
+  width: auto;
+  float: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 23px 25px;
+  cursor: pointer;
+}</pre>
+                </div>
+                
+<!-- HEADER -->
+                
+        <h1 id="header">Header</h1>
+        	<h2>Information Bar</h2>
+            	<p>The header area is divided into three components. The first one is the information bar, located at the very top of the page. It includes the search bar, e-newsletter sign up button, and social icons.</p>
+                <div class="information-bar">
+                	<div class="container">
+                        <form class="search-form">
+                            <span class="fa fa-search"></span><label for="search">Search</label><input type="text" id="search" class="search" placeholder="Search" />
+                        </form>
+                        <div class="info-right">
+                            <a href=""><button class="signup-btn">Sign up for emails</button></a>
+                            <div class="social">
+                                <ul>
+                                    <li><a href=""><span class="fa fa-facebook-square fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-twitter-square fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-rss-square fa-2x"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-mobile">
+                	<p class="bold">The information bar does not display on mobile devices. Links from this area can be found in the mobile navigation menu.</p>
+                </div>
+            <h2>Hero Area</h2>
+            	<p>The hero area consists of a background image, a headshot of the senator on the left, and a translucent box of essential senator information on the right.</p>
+            	<div class="hero">
+                	<div class="hero-small">
+                		<img src="img/bartolotta-mobile.png" alt="" />
+                    </div>
+                	<div class="hero-large">
+                		<img src="img/bartolotta-bg.jpg" alt="" />
+                    </div>
+                	<div class="container">
+                        <div class="senator-pic">
+                        	<img src="img/camera-bartolotta.png" alt="" />
+                        </div>
+                        <div class="senator-info">
+                            <p class="senator-name">Camera Bartolotta</p>
+                            <p class="district">Senator of Pennsylvania's 46th District</p>
+                            <p class="counties">Beaver, Washington, and Greene Counties</p>
+                        </div>
+                    </div>
+                </div>
+            <h2>Navigation</h2>
+            	<p class="no-mobile no-mobile3 bold">The mobile navigation is special.  Click <a href="senator-home-2.html">here</a> to see it in action.
+                <div class="nav-container">
+                    <nav>
+                        <div class="site-title">
+                            <p>Senator Camera Bartolotta</p>
+                        </div>
+                        <ul id="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a>
+                                <ul>
+                                    <li><a href="#">Biography</a></li>
+                                    <li><a href="#">Committees</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">46th District</a>
+                                <ul>
+                                    <li><a href="#">District Map</a></li>
+                                    <li><a href="#">Office Locations</a></li>
+                                    <li><a href="#">House Delegation</a></li>
+                                    <li><a href="#">School Districts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">News</a>
+                                <ul>
+                                    <li><a href="#">News Releases</a></li>
+                                    <li><a href="#">E-Newsletters</a></li>
+                                    <li><a href="#">Audio/Video</a></li>
+                                    <li><a href="#">TV Show</a></li>
+                                    <li><a href="#">Photo Gallery</a></li>
+                                    <li><a href="#">Senate News Brief</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Legislation</a>
+                                <ul>
+                                    <li><a href="#">Prime Sponsored Legislation</a></li>
+                                    <li><a href="#">Bills Passed by the Senate</a></li>
+                                    <li><a href="#">Search for a Bill</a></li>
+                                    <li><a href="#">Senate Calendar</a></li>
+                                    <li><a href="#">Watch Session Live</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="#">Constituent Services</a></li>
+                                    <li><a href="#">Citations</a></li>
+                                    <li><a href="#">Publications Available</a></li>
+                                    <li><a href="#">Visit the Capitol</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Resources</a>
+                                <ul>
+                                    <li><a href="#">Federal</a></li>
+                                    <li><a href="#">Kids</a></li>
+                                    <li><a href="#">Senate</a></li>
+                                    <li><a href="#">Senior</a></li>
+                                    <li><a href="#">State</a></li>
+                                    <li><a href="#">Veterans</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+<!-- FOOTER -->
+                
+        <h1 id="footer">Footer</h1>
+        	<footer>
+            	<div class="top">
+                	<div class="info-block">
+                    	<p class="bold">Harrisburg Office</p>
+                        <p>Senate Box 203046<br />
+                        Harrisburg, PA 17120-3046<br />
+                        Phone: 717-787-1463<br />
+                        Fax: 717-772-2108</p>
+                    </div>
+                    <div class="info-block">
+                    	<p class="bold">SouthPointe Office</p>
+                        <p>135 Technology Drive<br />
+                        Suite 202<br />
+                        Canonsburg, PA 15317<br />
+                        Phone: 724-746-3762<br />
+                        Fax: 724-746-3797</p>
+                    </div>
+                    <div class="info-block">
+                    	<p class="bold">Greene County Office</p>
+                        <p>93 East High Street<br />
+                        Suite 308<br />
+                        Waynesburg, PA 15370<br />
+                        Phone: 724-627-9802<br />
+                        Fax: 724-627-5066</p>
+                    </div>
+                    <div class="info-block">
+                    	<p class="bold">Monongahela Office</p>
+                        <p>316 West Main Street<br />
+                        Monongahela, PA 15063<br />
+                        Phone: 724-258-3365<br />
+                        Fax: 724-258-3368</p>
+                    </div>
+                    <div class="info-block">
+                    	<p class="bold">Satellite Office</p>
+                        <p>Hopewell Twp. Building<br />
+                        1700 Clark Boulevard <br />
+                        Aliquippa, PA 15001<br />
+                        Open 2nd Monday of Month</p>
+                    </div>
+                    <br class="clear" />
+                </div>
+                <div class="middle">
+                	<div class="fake-footer2">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">46th District</a></li>
+                            <li><a href="">Newsroom</a></li>
+                            <li><a href="">Legislation</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Resources</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                	<div class="one-third">
+                        <form class="search-form">
+                            <span class="fa fa-search"></span><label for="footer-search">Search</label><input type="text" id="footer-search" class="search" placeholder="Search" />
+                        </form>
+                        <div class="social">
+                            <ul>
+                                <li><a href=""><span class="fa fa-facebook-square fa-2x"></span></a></li>
+                                <li><a href=""><span class="fa fa-twitter-square fa-2x"></span></a></li>
+                                <li><a href=""><span class="fa fa-rss-square fa-2x"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-third">
+                    	<p class="copyright">2016 &copy; Senate of Pennsylvania</p>
+                    </div>
+                    <div class="one-third">
+                        <a href="#top">
+                            <div class="back-to-top">
+                                <span class="fa fa-arrow-up fa-2x"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            
+<!-- CALLOUTS -->
+            
+        <h1 id="callouts">Callouts</h1>
+        	<p>Callouts will replace the current image sliders on the Senators' home pages.</p>
+            <div class="callout-container">
+                <div class="callout">
+                    <a href="">
+                        <div class="callout-image">
+                            <img src="img/concealed-carry.png" alt="" />
+                        </div>
+                        <div class="callout-overlay">
+                            <div class="callout-info">
+                                <p><span class="align"><span class="callout-heading">Concealed Carry Seminar</span><br /><span class="callout-snippet">Lorem ipsum dolor sit amet</span></span></p>
+                                <p class="add-label">Read More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="callout">
+                    <a href="">
+                        <div class="callout-image">
+                            <img src="img/profits.png" alt="" />
+                        </div>
+                        <div class="callout-overlay">
+                            <div class="callout-info">
+                                <p><span class="align"><span class="callout-heading">Planning for Profits</span><br /><span class="callout-snippet">Making small business lean and prosperous</span></span></p>
+                                <p class="add-label">Read More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="callout">
+                    <a href="">
+                        <div class="callout-image">
+                            <img src="img/spending.png" alt="" />
+                        </div>
+                        <div class="callout-overlay">
+                            <div class="callout-info">
+                                <p><span class="align"><span class="callout-heading">#SavePA</span><br /><span class="callout-snippet">Help us cut state spending</span></span></p>
+                                <p class="add-label">Read More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="callout">
+                    <a href="">
+                        <div class="callout-image">
+                            <img src="img/transportation.png" alt="" />
+                        </div>
+                        <div class="callout-overlay">
+                            <div class="callout-info">
+                                <p><span class="align"><span class="callout-heading">Act 89 State Transportation</span><br /><span class="callout-snippet">Website Offers Updates on Act 89, Act 88 and Overall Planned Transportation Projects</span></span></p>
+                                <p class="add-label">Read More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br class="clear" />
+            
+<!-- EVENTS CALENDAR -->
+            
+        <h1 id="calendar">Events Calendar</h1>
+        	<div class="calendar">
+            	<div class="cal-row">
+                	<div class="cal-date">
+                    	<div class="cell-wrapper">
+                    		<p>Mon, Nov 21</p>
+                        </div>
+                    </div>
+                    <div class="cal-info"></div>
+                </div>
+                <div class="cal-row">
+                	<div class="cal-date">
+                    	<div class="cell-wrapper">
+                    		<p>Tue, Nov 22</p>
+                        </div>
+                    </div>
+                    <div class="cal-info">
+                    	<a href="">
+                            <div class="cal-event">
+                                <p>Senate and House Veterans Affairs and Emergency Preparedness</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                        <a href="">
+                            <div class="cal-event">
+                                <p>Senate and House Veterans Affairs and Emergency Preparedness</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cal-row">
+                	<div class="cal-date">
+                    	<div class="cell-wrapper">
+                    		<p>Wed, Nov 23</p>
+                        </div>
+                    </div>
+                    <div class="cal-info">
+                    	<a href="">
+                            <div class="cal-event">
+                                <p>Senate and House Veterans Affairs and Emergency Preparedness</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                        <a href="">
+                            <div class="cal-event">
+                                <p>Senate and House Veterans Affairs and Emergency Preparedness</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                        <a href="">
+                            <div class="cal-event">
+                                <p>Senate and House Veterans Affairs and Emergency Preparedness</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cal-row">
+                	<div class="cal-date">
+                    	<div class="cell-wrapper">
+                    		<p>Thu, Nov 24</p>
+                        </div>
+                    </div>
+                    <div class="cal-info">
+                    	<a href="">
+                            <div class="cal-event">
+                                <p>Thanksgiving</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cal-row">
+                	<div class="cal-date no-border">
+                    	<div class="cell-wrapper">
+                    		<p>Fri, Nov 25</p>
+                        </div>
+                    </div>
+                    <div class="cal-info no-border">
+                    	<a href="">
+                            <div class="cal-event">
+                                <p>Black Friday</p>
+                            </div>
+                        </a>
+                        <div class="event-info-wrap">
+                            <div class="arrow-up"></div>
+                            <div class="event-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-- NEWS ARTICLES -->
+            
+        <h1 id="news">News Articles</h1>
+        	<div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">31</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 31, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">Bartolotta to Host “Coffee With Camera” Events November 1 and 2</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Senator Camera Bartolotta (R-46) is inviting community residents to join her for "Coffee With Camera" events in Waynesburg on November 1 and in Washington on November 2. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">24</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 24, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">Senate Sends Bartolotta’s Transportation Network Company Bill to the Governor</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">24</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 24, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">State Grants Support Greene County Recreation, Sewage Projects</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">24</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 24, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">House Approves Transportation Network Company Bill</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">21</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 21, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">Senator Bartolotta’s Concealed Carry Seminar Rescheduled for November 3</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">18</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 18, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">State Residents Take Part in Second Telephone Town Hall on Heroin &amp; Opioid Crisis</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">12</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 12, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">Bartolotta Urges Residents to Participate in Tele-Town Hall on PA Heroin/Opioid Crisis</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">12</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 12, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">Media Advisory - Bartolotta, Stack to Host Pathway to Pardons Event October 14</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="news-article">
+            	<div class="col1">
+                    <div class="news-date">
+                        <p class="month">Oct</p>
+                        <p class="day">12</p>
+                        <p class="year">2016</p>
+                        <p class="full-date">October 12, 2016</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="news-title">
+                        <h2><a href="">October 2016 - Focus on the 46th with Senator Bartolotta</a></h2>
+                    </div>
+                    <div class="news-snippet">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nisi ultricies, dictum ipsum quis, tincidunt libero. Duis ut erat eu nisl ultrices suscipit ac a turpis. Ut ac vulputate velit. Vivamus pellentesque mattis nisi. <a href="" class="read-more">[Read More]</a></p>
+                    </div>
+                </div>
+                <br class="clear" />
+            </div>
+            
+<!-- MEETINGS & HEARINGS -->
+
+		<h1 id="meetings">Meetings &amp; Hearings</h1>
+        	<div class="mh-container">
+                <div class="mh-title">
+                    <h2><a href="">HB 2381</a></h2>
+                </div>
+                <p>Senate Education Committee Monday, October  24, 2016 Off the Floor<br />
+                The Senate Education Committee will meet to consider the following bill:<br />
+                House Bill 2381, P.N. <a href="" class="read-more">[Read More]</a></p>
+            </div>
+            <div class="mh-container">
+                <div class="mh-title">
+                    <h2><a href="">HB 2078, HB 1907, and HB 2338</a></h2>
+                </div>
+                <p>Senate Education Committee Tuesday, October  18, 2016 Off the Floor<br />
+                The Senate Education Committee will consider the following three bills:<br />
+                House Bill 1907 P.N.  (Benninghoff) will clarify truancy procedures. – Summary <a href="" class="read-more">[Read More]</a></p>
+            </div>
+            <div class="mh-container">
+                <div class="mh-title">
+                    <h2><a href="">SB 1332, SR 7, HB 1827</a></h2>
+                </div>
+                <p>Senate Education Committee Monday, June 27, 2016 Off the Floor<br />
+                The Senate Education Committee will meet to consider the following three bills:<br />
+                Senate Bill 1332 <a href="" class="read-more">[Read More]</a></p>
+            </div>
+            <div class="mh-container">
+                <div class="mh-title">
+                    <h2><a href="">SB 1212 and SB 1356</a></h2>
+                </div>
+                <p>Senate Education Committee Monday, September  26, 2016 Off the Floor<br />
+                The Senate Education Committee will meet to consider the following bills:<br />
+                Senate Bill 1212 <a href="" class="read-more">[Read More]</a></p>
+            </div>
+            <div class="mh-container">
+            	<div class="mh-video">
+                	<div class="embed-container">
+                		<iframe src="https://player.vimeo.com/video/87110435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="mh-inner">
+                    <div class="mh-title">
+                        <h2><a href="">ESSA (Every Student Succeeds Act)</a></h2>
+                    </div>
+                    <p>Joint Hearing Senate and House Education Committees<br />
+                    Every Student Succeeds Act:  An Informational Hearing<br />
+                    Tuesday, June 7, 2016 9:00 a.m. NOB, Hearing Room 1 <a href="" class="read-more">[Read More]</a></p>
+                </div>
+                <br class="clear" />
+            </div>
+            <div class="mh-container">
+                <div class="mh-title">
+                    <h2><a href="">Senate Bills 850 and 1312 and House Bills 1606 and 1640</a></h2>
+                </div>
+                <p>Senate Education Committee Wednesday, June 15, 2016 9:00 a.m. Room 461, Main Capitol<br />
+                The Senate Education Committee will meet to consider the following four bills: <br />
+                Senate Bill 850, P.N. 1758 (Browne) – Bill Summary – Creates a drug and alcohol recovery high school pilot program. <a href="" class="read-more">[Read More]</a></p>
+            </div>
+            
+<!-- ACCORDIONS -->
+            
+        <h1 id="accordions">Accordions</h1>
+        	<div class="accordion">
+            	<div class="tab">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label for="tab-one">2017</label>
+                    <div class="tab-content">
+                        <p>Currently there are no newsletters to show. Check back later.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label for="tab-two">2016</label>
+                    <div class="tab-content">
+                        <p><a href="">December 8, 2016</a><br />
+                        <a href="">November 30, 2016</a><br />
+                        <a href="">November 16, 2016</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label for="tab-three">2015</label>
+                    <div class="tab-content">
+                        <p><a href="">December 8, 2015</a><br />
+                        <a href="">November 30, 2015</a><br />
+                        <a href="">November 16, 2015</a>
+                        </p>
+                    </div>
+            	</div>
+            </div>
+            
+<!-- TELE-TOWN HALLS SLIDER -->
+
+        <h1 id="slider">Tele-Town Halls Slider</h1>
+            <div class="block-container">
+                <div class="half-block fancy slider">
+                    <h2>Previous Tele-Town Halls</h2>
+                        <div class="tth-slider">
+                            <div>
+                                <div class="content">
+                                    <p><span class="bold">State Senator Camera Bartolotta</span><br />
+                                    September 27, 2016 @ 6:00 PM EDT</p>
+                                    <div class="center">
+                                        <a href=""><button class="cta">Audio</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content">
+                                    <p><span class="bold">State Senator Camera Bartolotta</span><br />
+                                    March 22, 2016 @ 6:00 PM EDT</p>
+                                    <div class="center">
+                                        <a href=""><button class="cta">Audio</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>	
+                                <div class="content">
+                                    <p><span class="bold">State Senator Camera Bartolotta</span><br />
+                                    September 29, 2015 @ 6:00 PM EDT</p>
+                                    <div class="center">
+                                        <a href=""><button class="cta">Audio</button></a>
+                                        <a href=""><button class="cta video">Video</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>	
+                                <div class="content">
+                                    <p><span class="bold">State Senator Camera Bartolotta</span><br />
+                                    June 10, 2015 @ 6:00 PM EDT</p>
+                                    <div class="center">
+                                        <a href=""><button class="cta">Audio</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.tth-slider').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+});
+</script>
+</body>
+</html>

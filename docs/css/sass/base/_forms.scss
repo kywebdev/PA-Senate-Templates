@@ -1,0 +1,280 @@
+.margin-form {
+	margin-bottom: 40px;
+}
+form {
+	div {
+		width: 100%;
+		margin-right: 3%;
+		margin-bottom: 10px !important;
+		float: left;
+		
+		&:nth-of-type(even) {
+			margin-right: 0%;
+		}
+	}
+}
+.theme-2 form {
+	.cta {
+		width: auto;
+		padding: 0px;
+	}
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+.theme-1 input {
+	width: 100% !important;
+	font-family: $body-font-family-theme-1 !important;
+	font-size: $body-font-size !important;
+	border: 1px solid $dark-gray;
+	padding: 10px !important;
+	border-radius: 0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+.theme-2 input {
+	width: 100% !important;
+	font-family: $body-font-family-theme-2 !important;
+	font-size: $body-font-size !important;
+	border: 1px solid $dark-gray;
+	padding: 10px !important;
+	border-radius: 0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+.theme-1 textarea {
+	width: 97% !important;
+	font-family: $body-font-family-theme-1 !important;
+	font-size: $body-font-size !important;
+	border: 1px solid $dark-gray;
+	padding: 10px !important;
+	height: 200px !important;
+	resize: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+.theme-2 textarea {
+	width: 97% !important;
+	font-family: $body-font-family-theme-2 !important;
+	font-size: $body-font-size !important;
+	border: 1px solid $dark-gray;
+	padding: 10px !important;
+	height: 200px !important;
+	resize: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+.theme-1 select {
+	width: 100% !important;
+	font-family: $body-font-family-theme-1;
+	font-size: $body-font-size;
+	border: 1px solid $dark-gray;
+	border-radius: 0px;
+	padding: 10px 35px 10px 10px !important;
+	background: url(../img/double_arrow.png) no-repeat center right $white;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+	line-height: 1.2 !important;
+}
+.theme-2 select {
+	width: 100% !important;
+	font-family: $body-font-family-theme-2;
+	font-size: $body-font-size;
+	border: 1px solid $dark-gray;
+	border-radius: 0px;
+	padding: 10px 35px 10px 10px !important;
+	background: url(../img/double_arrow.png) no-repeat center right $white;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+	line-height: 1.2 !important;
+}
+.show {
+	display: table;
+    margin-bottom: 10px;
+}
+input[type="checkbox"] {
+	margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 0px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+    background-color: $white;
+    -webkit-appearance: none;
+	float: left;
+	
+	&:checked {
+		background: url(../img/check.png) no-repeat center center $white;
+	}
+}
+input[type="radio"] {
+	margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+    background-color: $white;
+    -webkit-appearance: none;
+	float: left;
+	
+	&:checked {
+		background: url(../img/circle.png) no-repeat center center $white;
+	}
+}
+.theme-1 input[type="submit"] {
+	width: auto;
+	float: none;
+	margin-bottom: 20px;
+}
+.theme-2 input[type="submit"] {
+	width: auto;
+	float: none;
+	background: transparent;
+    border: none;
+    color: $white;
+	font-family: $body-font-family-theme-2;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	padding: 23px 25px;
+	cursor: pointer;
+}
+.information-bar {
+	.search {
+		border-radius: 20px;
+		width: 250px !important;
+		padding: 5px 15px 5px 35px !important;
+		margin-left: -16px;
+	}
+}
+.bottom {
+	.search {
+		border-radius: 20px;
+		width: 94% !important;
+		padding: 5px 15px 5px 35px !important;
+		margin-left: -16px;
+		border: 0px;
+		margin-right: 5%;
+		font-size: 16px !important;
+		float: left;
+	}
+}
+.search-form {
+	width: 50%;
+	
+	label {
+		display: none;
+	}
+}
+.gform_wrapper .top_label .gfield_label {
+	display: block !important;
+}
+.gform_wrapper label.gfield_label {
+	font-weight: 600 !important;
+}
+.gform_wrapper ul.gform_fields li.gfield {
+	padding-right: 0px !important;
+	float: left;
+	width: 47%;
+	margin-right: 3%;
+}
+.gform_wrapper ul li.gfield {
+	clear: none !important;
+}
+.gform_wrapper li.gfield.field_description_below+li.gsection {
+	float: left !important;
+	width: 100% !important;
+}
+.entry-content .gform_wrapper li.gfield.field_description_below+li.gsection {
+	margin-top: 50px !important;
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=image]):not([type=file]) {
+	line-height: 1.15 !important;
+}
+.theme-2 .gform_footer.top_label {
+	display: inline-block;
+	padding: 23px 25px;
+	width: auto !important;
+	background-color: $blue-theme-2;
+	color: $white;
+	border: none;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	cursor: pointer;
+	transition: background-color .2s linear;
+	position: relative;
+	z-index: 10;
+	border: 2px solid transparent;
+	
+	&:hover {
+		background-color: #1685b7;
+	}
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 2px;
+		left: 2px;
+		right: 2px;
+		bottom: 2px;
+		border: 2px solid $white;
+	}
+}
+.theme-1 .gform_wrapper .gform_footer input.button, .theme-1 .gform_wrapper .gform_footer input[type=submit], .theme-1 .gform_wrapper .gform_page_footer input.button, .theme-1 .gform_wrapper .gform_page_footer input[type=submit] {
+	padding: 15px 20px !important;
+	background-color: $red;
+	width: auto !important;
+	color: $white;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color .2s linear;
+	
+	&:hover {
+		background-color: $body-link-color-theme-1;
+	}
+}
+.theme-2 .gform_wrapper .gform_footer input.button, .theme-2 .gform_wrapper .gform_footer input[type=submit], .theme-2 .gform_wrapper .gform_page_footer input.button, .theme-2 .gform_wrapper .gform_page_footer input[type=submit] {
+	width: auto !important;
+	margin: 0px !important;
+	padding: 23px 25px !important;
+}
+.gform_wrapper .gform_footer {
+	padding: 0px !important;
+}
+.gform_wrapper .gform_heading {
+	display: none;
+}
+.width-fix {
+	width: 100% !important;
+}
+input[id$="_other"] {
+	width: 92% !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 650px) {
+	.gform_wrapper ul.gform_fields li.gfield {
+		width: 100%;
+		margin-right: 0%;
+	}
+	.theme-1 textarea, .theme-2 textarea {
+		width: 100% !important;
+	}
+}

@@ -1,0 +1,240 @@
+/*
+ * Set all elements to border-box sizing.
+ * This may be overkill and can be overwrote if needed but generally I recommend doing this to prevent frustration down the line.
+ */
+  
+* {
+  @include box-sizing(border-box);
+}
+
+html, body {
+  height: 100%;
+}
+body.theme-1 {
+	background-color: $light-gray-theme-1;
+	color: $dark-gray;
+}
+body.theme-2 {
+	background-color: $white;
+	color: $dark-gray;
+}
+pre {
+	font-size: .9em;
+	color: $dark-gray;
+	margin: 0px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.container {
+	width: 85%;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+.style-guide .container {
+	width: 85%;
+	max-width: 1300px;
+	margin: 0px auto;
+}
+.sidebar {
+	width: 15%;
+	float: left;
+	position: fixed;
+	margin-top: 120px;
+}
+.style-guide .mainContent {
+	width: 80%;
+	float: right;
+	margin-top: 120px;
+	margin-bottom: 100px;
+}
+.module {
+	width: 29%;
+	margin-right: 4%;
+    float: left;
+	margin-bottom: 30px;
+}
+.module .red, .module .blue-theme-1, .module .yellow, .module .orange, .module .blue-theme-2 {
+	width: 100%;
+	height: 150px;
+}
+.red {
+	background-color: $red;
+}
+.orange {
+	background-color: $orange;
+}
+.blue-theme-1 {
+	background-color: $blue-theme-1;
+}
+.blue-theme-2 {
+	background-color: $blue-theme-2;
+}
+.yellow {
+	background-color: $yellow;
+}
+.dark-gray {
+	width: 100%;
+	height: 150px;
+	background-color: $dark-gray;
+}
+.gray-theme-1 {
+	width: 100%;
+	height: 150px;
+	background-color: $gray-theme-1;
+}
+.gray-theme-2 {
+	width: 100%;
+	height: 150px;
+	background-color: $gray-theme-2;
+}
+.light-gray-theme-1 {
+	width: 100%;
+	height: 150px;
+	background-color: $light-gray-theme-1;
+	border: 1px solid $gray-theme-1;
+}
+.light-gray-theme-2 {
+	width: 100%;
+	height: 150px;
+	background-color: $light-gray-theme-2;
+	border: 1px solid $gray-theme-2;
+}
+.white {
+	width: 100%;
+	height: 150px;
+	background-color: $white;
+	border: 1px solid $gray-theme-1;
+}
+.theme-1 .details {
+	width: 100%;
+	background-color: $white;
+	padding: 20px;
+	clear: both;
+	
+	p {
+		margin: 0px;
+	}
+}
+.theme-2 .details {
+	width: 100%;
+	background-color: $light-gray-theme-2;
+	padding: 20px;
+	clear: both;
+	
+	p {
+		margin: 0px;
+	}
+}
+.clear {
+	clear: both;
+}
+.no-mobile {
+	display: none;
+	text-align: center;
+}
+.center {
+	text-align: center;
+	margin: 0px auto;
+}
+iframe {
+	width: 100%;
+	border: 0;
+}
+.gallery-placeholder {
+	border: 1px solid $dark-gray;
+	width: 100%;
+	height: 200px;
+	padding: 40px;
+}
+ul {
+	li {
+		line-height: 24px;
+	}
+}
+audio {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+.fa-volume-up {
+	color: #555;
+	position: absolute;
+    top: 11%;
+    left: 33%;
+    font-size: 150px !important;
+}
+.add-space {
+	margin-top: 60px;  // use this if a h1 or callout isn't the first element on the page
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.useful-links {
+	margin-top: 50px;
+}
+.vc_row {
+	
+	h2 {
+		&:first-of-type {
+			margin-top: 0px !important;
+		}
+	}
+}
+.theme-1.search-no-results .page-content {
+	.fa-search {
+		top: 30px;
+	}
+	input {
+		padding: 10px 10px 10px 45px;
+	}
+}
+.theme-2.search-no-results .page-content {
+	.fa-search {
+		top: 30px;
+	}
+	input {
+		padding: 10px 10px 10px 45px;
+	}
+}
+
+/* Media Queries */
+@media screen and (max-width: 1420px) {
+	.sidebar {
+		display: none;
+	}
+	.style-guide .mainContent {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1180px) {
+	.no-mobile3 {
+		display: block;
+	}
+}
+@media screen and (max-width: 900px) {
+	.module {
+		width: 46%;
+	}
+}
+@media screen and (max-width: 844px) {
+	.no-mobile {
+		display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	.theme-2.style-guide .mainContent {
+		margin-top: 40px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.module {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.theme-1.style-guide .mainContent {
+		margin-top: 40px;
+	}
+}

@@ -1,0 +1,229 @@
+.theme-1 .calendar {
+	width: 100%;
+	border: 1px solid $gray-theme-1;
+	display: table;
+}
+.theme-2 .calendar {
+	width: 100%;
+	border: 1px solid $gray-theme-2;
+	display: table;
+}
+.cal-row {
+	width: 100%;
+	display: flex;
+}
+.theme-1 .cal-date {
+	background-color: $red;
+	width: 25%;
+	border-bottom: 1px solid $white;
+	padding: 20px;
+	float: left;
+	display: table-cell;
+	
+	p {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 22px;
+		text-align: center;
+		margin: 0px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.theme-2 .cal-date {
+	background-color: $blue-theme-2;
+	width: 25%;
+	border-bottom: 1px solid $white;
+	padding: 20px;
+	float: left;
+	display: table-cell;
+	
+	p {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 24px;
+		text-align: center;
+		margin: 0px;
+		font-weight: 800;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.theme-2.pasengop .cal-date {
+	background-color: $burgundy;
+	width: 25%;
+	border-bottom: 1px solid $white;
+	padding: 20px;
+	float: left;
+	display: table-cell;
+	
+	p {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 24px;
+		text-align: center;
+		margin: 0px;
+		font-weight: 800;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.no-border {
+	border: none !important;
+}
+.theme-1 .cal-info {
+	width: 75%;
+	background-color: #ededed;
+	border-bottom: 1px solid $gray-theme-1;
+	padding: 10px 10px 0px;
+	float: left;
+	display: table-cell;
+}
+.theme-2 .cal-info {
+	width: 75%;
+	background-color: #ededed;
+	border-bottom: 1px solid $gray-theme-2;
+	padding: 10px 10px 0px;
+	float: left;
+	display: table-cell;
+}
+.theme-1 .cal-info a {
+	text-decoration: none !important;
+	display: inline-flex;
+	
+	&:hover .cal-event p {
+		text-decoration: none;
+	}
+	&:hover .cal-event {
+		background-color: rgba($blue-theme-1, .7);
+	}
+	&:hover + .event-info-wrap, &:active + .event-info-wrap {
+		opacity: 1;
+	}
+}
+.theme-2 .cal-info a {
+	text-decoration: none !important;
+	display: inline-flex;
+	
+	&:hover .cal-event p {
+		text-decoration: none;
+	}
+	&:hover .cal-event {
+		background-color: rgba($orange, .7);
+	}
+	&:hover + .event-info-wrap, &:active + .event-info-wrap {
+		opacity: 1;
+	}
+}
+.theme-2.pasengop .cal-info a {
+	text-decoration: none !important;
+	display: inline-flex;
+	
+	&:hover .cal-event p {
+		text-decoration: none;
+	}
+	&:hover .cal-event {
+		background-color: rgba($blue-theme-2, .7);
+	}
+	&:hover + .event-info-wrap, &:active + .event-info-wrap {
+		opacity: 1;
+	}
+}
+.theme-1 .cal-event {
+	background-color: $blue-theme-1;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: table;
+	transition: all .2s linear;
+	
+	p {
+		color: $white;
+		margin: 0px;
+		font-size: 16px;
+	}
+}
+.theme-2 .cal-event {
+	background-color: $orange;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: table;
+	transition: all .2s linear;
+	
+	p {
+		color: $white;
+		margin: 0px;
+		font-size: 16px;
+	}
+}
+.theme-2.pasengop .cal-event {
+	background-color: $blue-theme-2;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: table;
+	transition: all .2s linear;
+	
+	p {
+		color: $white;
+		margin: 0px;
+		font-size: 16px;
+	}
+}
+.cell-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.event-info-wrap {
+	opacity: 0;
+	transition: all .2s linear;
+	position: relative;
+	z-index: 2;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+.event-info {
+	background-color: $white;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	position: absolute;
+	box-shadow: 0px 0px 20px #D2D2D2;
+	margin-top: 6px;
+	pointer-events: none;
+	opacity: 1;
+		
+	p {
+		font-size: 16px;
+		margin: 0px;
+	}
+}
+.arrow-up {
+	width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $white;
+    margin-left: 30px;
+    margin-top: -9px;
+    position: absolute;
+    z-index: 2;
+	pointer-events: none;
+}
+/* Media Queries */
+@media screen and (max-width: 700px) {
+	.theme-1 .cal-row, .theme-2 .cal-row {
+		display: block;
+	}
+	.theme-1 .cal-date, .theme-2 .cal-date, .theme-1 .cal-info, .theme-2 .cal-info, .theme-2.pasengop .cal-info, .theme-2.pasengop .cal-date {
+		width: 100%;
+	}
+	.theme-1 .cal-info a, .theme-2 .cal-info a, .theme-2.pasengop .cal-info a {
+		&:hover + .event-info-wrap, &:active + .event-info-wrap {
+			opacity: 0;
+		}
+	}
+}

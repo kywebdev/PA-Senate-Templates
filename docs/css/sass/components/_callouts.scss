@@ -1,0 +1,302 @@
+.theme-1 .callout-container {
+	margin-bottom: 20px;
+	margin-top: -30px;
+}
+.theme-2 .callout-container {
+	margin-bottom: 30px;
+	margin-top: -30px;
+}
+.theme-1 .callout {
+	width: 47%;
+	margin-right: 0%;
+	margin-top: 45px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	
+	&:nth-of-type(odd) {
+		margin-right: 6%;
+	}
+	&:nth-of-type(1), &:nth-of-type(2) {
+		margin-top: 0px;
+	}
+	&:nth-of-type(3n+1) .callout-heading {
+		background-color: $red;
+	}
+	&:nth-of-type(3n+2) .callout-heading {
+		background-color: $blue-theme-1;
+	}
+	&:nth-of-type(3n+3) .callout-heading {
+		background-color: $yellow;
+	}
+	&:nth-of-type(3n+1) .callout-overlay {
+		background-color: rgba($red, .6);
+	}
+	&:nth-of-type(3n+2) .callout-overlay {
+		background-color: rgba($blue-theme-1, .6);
+	}
+	&:nth-of-type(3n+3) .callout-overlay {
+		background-color: rgba($yellow, .7);
+	}
+	a {
+		display: block;
+		transition: all .2s linear;
+		margin-bottom: -5px;
+		
+		&:hover .callout-info .align {
+			opacity: 0;
+		}
+		&:hover .add-label {
+			font-size: 22px;
+			opacity: 1;
+		}
+		&:hover .callout-image img {
+			transform: scale(1.1);
+		}
+	}
+}
+.theme-2 .callout {
+	width: 47%;
+	margin-right: 0%;
+	margin-top: 45px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	
+	&:nth-of-type(odd) {
+		margin-right: 6%;
+	}
+	&:nth-of-type(1), &:nth-of-type(2) {
+		margin-top: 0px;
+	}
+	&:nth-of-type(1) .callout-overlay, &:nth-of-type(4) .callout-overlay, &:nth-of-type(5) .callout-overlay, &:nth-of-type(8) .callout-overlay {
+		background-color: rgba($blue-theme-2, .6);
+	}
+	&:nth-of-type(2) .callout-overlay, &:nth-of-type(3) .callout-overlay, &:nth-of-type(6) .callout-overlay, &:nth-of-type(7) .callout-overlay {
+		background-color: rgba($orange, .6);
+	}
+	a {
+		display: block;
+		transition: all .2s linear;
+		margin-bottom: -5px;
+		
+		&:hover .callout-info .align {
+			opacity: 0;
+		}
+		&:hover .add-label {
+			font-size: 22px;
+			opacity: 1;
+		}
+		&:hover .callout-image img {
+			transform: scale(1.1);
+		}
+		&:hover .callout-image:before {
+			opacity: 1;
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			bottom: 20px;
+		}
+	}
+}
+.theme-2.pasengop .callout {
+	
+	&:nth-of-type(1) .callout-overlay, &:nth-of-type(4) .callout-overlay, &:nth-of-type(5) .callout-overlay, &:nth-of-type(8) .callout-overlay {
+		background-color: rgba($burgundy, .6);
+	}
+	&:nth-of-type(2) .callout-overlay, &:nth-of-type(3) .callout-overlay, &:nth-of-type(6) .callout-overlay, &:nth-of-type(7) .callout-overlay {
+		background-color: rgba($blue-theme-2, .6);
+	}
+}
+.read-more-container {
+	@include aspect-ratio(16, 9);
+}
+.theme-1 .add-label {
+	opacity: 0;
+	display: block;
+	transition: all .2s linear;
+	margin: 15px 0px 0px;
+    color: $white;
+    width: 70%;
+    text-align: center;
+	@include centerer;
+}
+.theme-2 .add-label {
+	opacity: 0;
+	display: block;
+	transition: all .2s linear;
+    color: $white;
+    width: 70%;
+    text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	margin: 0px;
+	@include centerer;
+}
+.align {
+	opacity: 1;
+	display: block;
+	transition: all .2s linear;
+	margin-top: 30px;
+}
+.theme-1 .callout-heading {
+	width: 100%;
+	padding: 10px 0px;
+	height: auto;
+	position: absolute;
+	z-index: 3;
+	
+	p {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: $white;
+		margin: 0px;
+		text-align: center;
+	}
+}
+.theme-1 .callout-heading.blue {
+	background-color: $blue-theme-1;
+}
+.theme-2 .callout-heading {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	color: $white;
+	margin: 0px;
+	text-align: center;
+	display: block;
+}
+.theme-1 .callout-image {
+	width: 100%;
+	
+	img {
+		width: 100%;
+		transition: all .2s linear;
+	}
+}
+.theme-2 .callout-image {
+	width: 100%;
+	
+	img {
+		width: 100%;
+		transition: all .2s linear;
+	}
+	
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 10;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		border: 2px solid $white;
+		opacity: 0;
+		transition: all .2s linear;
+	}
+}
+.theme-1 .callout-overlay {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	min-height: 278px;
+	top: 0px;
+}
+.theme-2 .callout-overlay {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	min-height: 271px;
+	top: 0px;
+}
+.theme-1 .callout-info  {
+	position: relative;
+	@include aspect-ratio(16, 9);
+
+	p {
+		position: absolute;
+		color: $white;
+		text-align: center;
+		width: 70%;
+		@include centerer;
+	}
+}
+.theme-1 callout-info:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+.theme-2 .callout-info  {
+	position: relative;
+	@include aspect-ratio(16, 9);
+
+	p {
+		position: absolute;
+		color: $white;
+		text-align: center;
+		width: 80%;
+		margin: 0px;
+		font-size: 21px;
+		@include centerer;
+	}
+}
+.theme-1 .callout:nth-of-type(3n+3) .callout-overlay .align, .callout-info p, .theme-1 .callout:nth-of-type(3n+3) .callout-overlay .add-label, .theme-1 .callout:nth-of-type(3n+3) .callout-heading p {
+	color: $dark-gray;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+	.theme-1 .callout, .theme-2 .callout {
+		width: 100%;
+		max-width: 450px;
+		margin: 45px auto 0px !important;
+		float: none;
+		
+		&:nth-of-type(1), &:nth-of-type(2) {
+			margin-top: 45px;
+		}
+	}
+	.theme-1 .callout:nth-of-type(odd), .theme-2 .callout:nth-of-type(odd) {
+		margin-right: auto;
+	}
+	.theme-2 .callout {
+		&:nth-of-type(odd) .callout-overlay {
+			background-color: rgba($blue-theme-2, .6);
+		}
+		&:nth-of-type(even) .callout-overlay {
+			background-color: rgba($orange, .6);
+		}
+	}
+	.theme-2.pasengop .callout {
+		
+		&:nth-of-type(odd) .callout-overlay {
+			background-color: rgba($burgundy, .6);
+		}
+		&:nth-of-type(even) .callout-overlay {
+			background-color: rgba($blue-theme-2, .6);
+		}
+	}
+}
+@media screen and (max-width: 550px) {
+	.theme-2 .callout-snippet {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.theme-1 .callout p {
+		font-size: 16px;
+	}
+	.theme-1 .callout-heading p {
+		font-size: 14px;
+	}
+}
+@media screen and (max-device-width: 768px) {
+	.theme-1 .add-label {
+		display: none;
+	}
+	.theme-2 .add-label {
+		display: none;
+	}
+}

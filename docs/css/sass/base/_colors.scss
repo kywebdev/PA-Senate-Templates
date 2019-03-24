@@ -1,0 +1,531 @@
+/* THEME 2, COLOR SCHEME 1 */
+
+.theme-2.colors-1 {
+	
+	/* Typography */
+	
+	h1 {
+		color: $red;
+	}
+	h2 {
+		color: $blue-theme-1;
+	}
+	.mainContent a {
+		color: $red;
+	}
+	.audio-video .av-block h2 a {
+		color: $blue-theme-1;
+	}
+	.social ul li a:hover {
+		color: $red;
+	}
+	
+	/* Hero */
+	
+	.senator-name, .district, .counties {
+		color: $red;
+	}
+	.social ul li a {
+		color: $white;
+	}
+	
+	/* Navigation */
+	
+	#menu {
+		background-color: $red;
+		
+		li {
+			ul {
+				background-color: $red;
+			}
+			a {
+				&:hover {
+					background-color: #a54a53;
+					color: $white;
+				}
+			}
+		}
+	}
+	.slicknav_menu {
+		background: $red;
+		
+		li {
+			a {
+				&:hover {
+					background-color: #a54a53;
+				}
+			}
+		}
+	}
+	.slicknav_parent.slicknav_open ul li {
+    	background-color: #983d46 !important;
+	}
+	
+	/* Callouts */
+	
+	.callout:nth-of-type(1) .callout-overlay, .callout:nth-of-type(4) .callout-overlay, .callout:nth-of-type(5) .callout-overlay, .callout:nth-of-type(8) .callout-overlay {
+		background-color: rgba($red, .6);
+	}
+	.callout:nth-of-type(2) .callout-overlay, .callout:nth-of-type(3) .callout-overlay, .callout:nth-of-type(6) .callout-overlay, .callout:nth-of-type(7) .callout-overlay {
+		background-color: rgba($blue-theme-1, .6);
+	}
+	
+	/* Buttons */
+	
+	.cta {
+		background-color: $red;
+		
+		&:hover {
+			background-color: #a54a53;
+		}
+	}
+	.pagination {
+		a {
+			background-color: #E5E3E3;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $red;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.navigation {
+		a {
+			background-color: #E5E3E3;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			line-height: 43px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $red;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.gform_footer.top_label {
+		display: inline-block;
+		padding: 23px 25px;
+		width: auto !important;
+		background-color: $red;
+		color: $white;
+		border: none;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: pointer;
+		transition: background-color .2s linear;
+		position: relative;
+		z-index: 10;
+		border: 2px solid transparent;
+		
+		&:hover {
+			background-color: #a54a53;
+		}
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 2px;
+			left: 2px;
+			right: 2px;
+			bottom: 2px;
+			border: 2px solid $white;
+		}
+	}
+	
+	/* News */
+	
+	.news-title {
+		h2 {
+			a {
+				color: $blue-theme-1 !important;
+				
+				&:hover {
+					color: $blue-theme-1 !important;
+				}
+			}
+		}
+	}
+	.news-date {
+		background-color: $red !important;
+	}
+	
+	/* Gallery */
+
+	.photo-gallery {
+		background-color: rgba($blue-theme-1, .2) !important;
+	}
+	
+	/* Accordions */
+	
+	.tab label {
+		background: $blue-theme-1;
+		
+		&:hover {
+			background: rgba($blue-theme-1, .8);
+		}
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+		background-color: $blue-theme-1 !important;
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+		background-color: rgba($blue-theme-1, .8) !important;
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+		border: none !important;
+		background-color: $blue-theme-1 !important;
+		padding: 10px !important;
+		margin-bottom: 3px !important;
+	}
+	
+	
+	/* Search */
+	
+	.search-result {
+		&:nth-of-type(3n+1) {
+			&:hover {
+				border-left: 5px solid $red;
+			}
+		}
+		&:nth-of-type(3n+2) {
+			&:hover {
+				border-left: 5px solid $blue-theme-1;
+			}
+		}
+		&:nth-of-type(3n+3) {
+			&:hover {
+				border-left: 5px solid $yellow;
+			}
+		}
+	}
+	h2 {
+		a {
+			color: $blue-theme-1 !important;
+		}
+	}
+	.categories {
+		a {
+			&:hover {
+				background-color: $red !important;
+			}
+		}
+	}
+	
+	/* Footer */
+	
+	.fake-footer2 ul li a:hover {
+		color: $red !important;
+	}
+	.bottom {
+		background-color: $red;
+	}
+}
+
+
+/* THEME 1, COLOR SCHEME 2 */
+
+.theme-1.colors-2 {
+	
+	/* Typography */
+	
+	h1 {
+		color: $blue-theme-2;
+	}
+	h2 {
+		color: $orange;
+	}
+	.block-container .third-block h3 {
+		color: $orange;
+	}
+	.mainContent a {
+		color: $blue-theme-2;
+	}
+	.audio-video .av-block h2 a {
+		color: $orange;
+	}
+	.social ul li a:hover {
+		color: $blue-theme-2;
+	}
+	
+	/* Hero */
+	
+	.senator-name, .district, .counties {
+		color: $orange;
+	}
+	.social ul li a {
+		color: $white;
+	}
+	
+	/* Navigation */
+	
+	#menu {
+		background-color: $blue-theme-2;
+		
+		li {
+			ul {
+				background-color: $blue-theme-2;
+			}
+			a {
+				&:hover {
+					background-color: #1685b7;
+					color: $white;
+				}
+			}
+		}
+	}
+	.slicknav_menu {
+		background: $blue-theme-2;
+		
+		li {
+			a {
+				&:hover {
+					background-color: #1685b7;
+				}
+			}
+		}
+	}
+	.slicknav_parent.slicknav_open ul li {
+    	background-color: #0f80a8 !important;
+	}
+	
+	/* Callouts */
+	
+	.callout:nth-of-type(1) .callout-overlay, .callout:nth-of-type(4) .callout-overlay, .callout:nth-of-type(5) .callout-overlay, .callout:nth-of-type(8) .callout-overlay {
+		background-color: rgba($blue-theme-2, .6);
+	}
+	.callout:nth-of-type(2) .callout-overlay, .callout:nth-of-type(3) .callout-overlay, .callout:nth-of-type(6) .callout-overlay, .callout:nth-of-type(7) .callout-overlay {
+		background-color: rgba($orange, .6);
+	}
+	.callout:nth-of-type(1) .callout-heading, .callout:nth-of-type(4) .callout-heading, .callout:nth-of-type(5) .callout-heading, .callout:nth-of-type(8) .callout-heading {
+		background-color: $blue-theme-2;
+	}
+	.callout:nth-of-type(2) .callout-heading, .callout:nth-of-type(3) .callout-heading, .callout:nth-of-type(6) .callout-heading, .callout:nth-of-type(7) .callout-heading {
+		background-color: $orange;
+	}
+	.callout-heading p, .callout-info p {
+		color: $white !important;
+	}
+	
+	/* Buttons */
+	
+	.signup-btn {
+		background-color: $orange;
+		
+		&:hover {
+			background-color: #d38d5e;
+		}
+	}
+	.cta {
+		background-color: $blue-theme-2;
+		
+		&:hover {
+			background-color: #1685b7;
+		}
+	}
+	.pagination {
+		a {
+			background-color: $white;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			border-radius: 5px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $blue-theme-2;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.navigation {
+		a {
+			background-color: $white;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			border-radius: 5px;
+			line-height: 43px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $blue-theme-2;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.gform_footer.top_label {
+		display: inline-block;
+		padding: 23px 25px;
+		width: auto !important;
+		background-color: $blue-theme-2;
+		color: $white;
+		border: none;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: pointer;
+		transition: background-color .2s linear;
+		position: relative;
+		z-index: 10;
+		border: 2px solid transparent;
+		
+		&:hover {
+			background-color: #1685b7;
+		}
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 2px;
+			left: 2px;
+			right: 2px;
+			bottom: 2px;
+			border: 2px solid $white;
+		}
+	}
+	
+	/* News */
+	
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(1) .news-block {
+		background-color: $blue-theme-2;
+	}
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(2) .news-block {
+		background-color: $orange;
+	}
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(3) .news-block {
+		background-color: $blue-theme-2;
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(1) .news-block {
+		background-color: $orange;
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(2) .news-block {
+		background-color: $blue-theme-2;
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(3) .news-block {
+		background-color: $orange;
+	}
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(1) .news-snippet {
+		background-color: rgba($blue-theme-2, .9);
+	}
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(2) .news-snippet {
+		background-color: rgba($orange, .9);
+	}
+	.news-row:nth-of-type(odd) .news-link:nth-of-type(3) .news-snippet {
+		background-color: rgba($blue-theme-2, .9);
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(1) .news-snippet {
+		background-color: rgba($orange, .9);
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(2) .news-snippet {
+		background-color: rgba($blue-theme-2, .9);
+	}
+	.news-row:nth-of-type(even) .news-link:nth-of-type(3) .news-snippet {
+		background-color: rgba($orange, .9);
+	}
+	.news-block p, .news-snippet p {
+		color: $white !important;
+	}
+	
+	/* Accordions */
+	
+	.tab label {
+		background: $orange;
+		
+		&:hover {
+			background: rgba($orange, .8);
+		}
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+		background-color: $orange !important;
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover {
+		background-color: rgba($orange, .8) !important;
+	}
+	.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading {
+		border: none !important;
+		background-color: $orange !important;
+		padding: 10px !important;
+		margin-bottom: 3px !important;
+	}
+	
+	/* Search */
+	
+	.search-result {
+		&:nth-of-type(odd) {
+			&:hover {
+				border-left: 5px solid $blue-theme-2;
+			}
+		}
+		&:nth-of-type(even) {
+			&:hover {
+				border-left: 5px solid $orange;
+			}
+		}
+	}
+	h2 {
+		a {
+			color: $orange !important;
+		}
+	}
+	.categories {
+		a {
+			&:hover {
+				background-color: $blue-theme-2 !important;
+			}
+		}
+	}
+	
+	/* Footer */
+	
+	.fake-footer2 ul li a {
+		color: #545454;
+		
+		&:hover {
+			color: $blue-theme-2 !important;
+		}
+	}
+	.bottom {
+		background-color: $blue-theme-2;
+	}
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+	.theme-1.colors-2 .callout:nth-of-type(odd) .callout-heading {
+		background-color: $blue-theme-2;
+	}
+	.theme-1.colors-2 .callout:nth-of-type(even) .callout-heading {
+		background-color: $orange;
+	}
+	.theme-1.colors-2 .callout:nth-of-type(odd) .callout-overlay {
+		background-color: rgba($blue-theme-2, .6);
+	}
+	.theme-1.colors-2 .callout:nth-of-type(even) .callout-overlay {
+		background-color: rgba($orange, .6);
+	}
+	.theme-2.colors-1 .callout:nth-of-type(odd) .callout-overlay {
+		background-color: rgba($red, .6);
+	}
+	.theme-2.colors-1 .callout:nth-of-type(even) .callout-overlay {
+		background-color: rgba($blue-theme-1, .6);
+	}
+}

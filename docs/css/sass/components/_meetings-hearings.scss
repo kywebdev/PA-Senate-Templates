@@ -1,0 +1,61 @@
+.mh-container {
+	margin-bottom: 40px;
+	
+	p {
+		padding: 0px 20px;
+	}
+	.mh-video {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+	}
+	.mh-inner {
+		width: 66%;
+		float: left;
+	}
+}
+.style-guide .mh-title {
+	background-color: $orange;
+	padding: 15px 20px;
+	width: 100%;
+	
+	h2 {
+		margin: 0px;
+		padding-top: 0px;
+		
+		a {
+			color: $white;
+			font-weight: normal;
+		}
+	}
+}
+.committee .mh-title {
+	background-color: $blue-theme-2;
+	padding: 15px 20px;
+	width: 100%;
+	
+	h2 {
+		margin: 0px;
+		padding-top: 0px;
+		font-size: 20px;
+		
+		a {
+			color: $white !important;
+			font-weight: normal !important;
+		}
+	}
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+	.mh-container {
+		.mh-video {
+			width: 100%;
+			margin-right: 0%;
+			margin-bottom: -4px;
+		}
+		.mh-inner {
+			width: 100%;
+		}
+	}
+}
