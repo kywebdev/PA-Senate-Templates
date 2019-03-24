@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Lusitana:400,700|Raleway:400,500,600|Open+Sans:800|Bitter:400,700|Source+Sans+Pro:300,600,700,900');
+
+body.theme-1 {
+  font-family: $body-font-family-theme-1;
+  font-size: $body-font-size;
+}
+body.theme-2 {
+  font-family: $body-font-family-theme-2;
+  font-size: $body-font-size;
+}
+
+.theme-1 h1, .theme-1 h2, .theme-1 h3,
+.theme-1 h4, .theme-1 h5, .theme-1 h6 {
+  font-family: $heading-font-family-theme-1;
+}
+.theme-2 h1, .theme-2 h2, .theme-2 h3,
+.theme-2 h4, .theme-2 h5, .theme-2 h6 {
+  font-family: $heading-font-family-theme-2;
+}
+
+.style-guide .site-header h1 {
+	padding-top: 0px !important;
+}
+.theme-1 h1 {
+  color: $red;
+  font-size: $heading-font-size;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  clear: both;
+}
+.theme-2 h1 {
+  color: $blue-theme-2;
+  font-size: $heading-font-size;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  clear: both;
+}
+.theme-2.committee h1 {
+  color: $orange;
+  font-size: $heading-font-size;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  clear: both;
+}
+.theme-2.pasengop h1 {
+  color: $burgundy;
+  font-size: $heading-font-size;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  clear: both;
+}
+.theme-1 h2 {
+  color: $blue-theme-1;
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.theme-2 h2 {
+  color: $orange;
+  font-size: 23px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.theme-2.committee h2 {
+  color: $blue-theme-2;
+  font-size: 23px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.theme-2.pasengop h2 {
+  color: $blue-theme-2;
+  font-size: 23px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.theme-1 h3 {
+  color: $dark-gray;
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.theme-2 h3 {
+  color: $dark-gray;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.theme-1 p {
+	line-height: 24px;
+	color: $dark-gray;
+}
+.theme-2 p {
+	font-weight: 300;
+	line-height: 24px;
+	color: $dark-gray;
+}
+.theme-1 .sidebar {
+	nav {
+		ul {
+			margin-left: -50px;
+		
+			li {
+				padding: 10px;
+				list-style-type: none;
+				width: 100%;
+				
+				a {
+					color: $dark-gray;
+					text-decoration: none;
+					padding: 10px;
+					border-radius: 5px;
+					transition: background-color .2s linear;
+					
+					&:hover {
+						background-color: #E5E3E3;
+					}
+				}
+			}
+		}
+	}
+}
+.theme-2 .sidebar {
+	nav {
+		ul {
+			margin-left: -50px;
+		
+			li {
+				padding: 10px;
+				list-style-type: none;
+				width: 100%;
+				
+				a {
+					color: $dark-gray;
+					text-decoration: none;
+					padding: 10px;
+					transition: background-color .2s linear;
+					
+					&:hover {
+						background-color: $light-gray-theme-2;
+					}
+				}
+			}
+		}
+	}
+}
+.bold {
+	font-weight: 700 !important;
+}
+.theme-1 .mainContent a {
+	color: $body-link-color-theme-1;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.theme-2 .mainContent a {
+	color: $body-link-color-theme-2;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.theme-2.committee .mainContent a {
+	color: $orange;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.theme-2.pasengop .mainContent a {
+	color: $burgundy;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.theme-1 .read-more {
+	color: $body-link-color-theme-1;
+	text-decoration: none;
+	font-weight: 700 !important;
+	transition: color .2s linear;
+}
+.theme-2 .read-more {
+	color: $body-link-color-theme-2;
+	text-decoration: none;
+	font-weight: 700 !important;
+	transition: color .2s linear;
+	
+	&:hover {
+		text-decoration: none !important;
+		color: #1685b7;
+	}
+}
+.theme-2.committee .read-more {
+	color: $orange;
+	text-decoration: none;
+	font-weight: 700 !important;
+	transition: color .2s linear;
+	
+	&:hover {
+		text-decoration: none !important;
+		color: #d38d5e;
+	}
+}
+.theme-2.pasengop .read-more {
+	color: $burgundy;
+	text-decoration: none;
+	font-weight: 700 !important;
+	transition: color .2s linear;
+	
+	&:hover {
+		text-decoration: none !important;
+		color: #c94c5b;
+	}
+}
+.theme-1 .breadcrumbs {
+	.right-ct {
+		margin: 0px 5px;
+	}
+}
+.theme-2 .breadcrumbs {
+	a {
+		font-weight: normal;
+	}
+	.right-ct {
+		margin: 0px 5px;
+	}
+}
+.theme-1 .article-icons {
+	background-color: $white;
+	padding: 15px;
+	width: 203px;
+	
+	a {
+		&:hover {
+			text-decoration: none !important;
+		}
+		.fa-stack {
+			margin-right: 5px;
+		}
+		.last {
+			margin-right: 0px;
+		}
+	}
+	.fb {
+		color: #507cbd;
+	}
+	.tw {
+		color: #64cbee;
+	}
+	.gp {
+		color: #dc4d40;
+	}
+	.pr {
+		color: #9e9e9e;
+	}
+}
+.theme-2 .article-icons {
+	background-color: $light-gray-theme-2;
+	padding: 15px;
+	width: 201px;
+	
+	a {
+		&:hover {
+			text-decoration: none !important;
+		}
+		.fa-stack {
+			margin-right: 5px;
+		}
+		.last {
+			margin-right: 0px;
+		}
+	}
+	.fb {
+		color: #507cbd;
+	}
+	.tw {
+		color: #64cbee;
+	}
+	.gp {
+		color: #dc4d40;
+	}
+	.pr {
+		color: #9e9e9e;
+	}
+}
+.useful-links {
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px !important;
+	}
+}
+.remove-heading-space {
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	h3 {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+}
+.committee-hearings {
+	h2 {
+		a {
+			color: $blue-theme-2 !important;
+			font-weight: normal !important;
+		}
+	}
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+	.theme-2 h1 {
+		font-size: 30px;
+	}
+	.theme-2 h2 {
+		font-size: 21px;
+	}
+	.theme-2 header h1 {
+		font-size: 22px !important;
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.theme-1 header h1 {
+		font-size: 22px !important;
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.theme-1 header h1 {
+		text-align: center;
+	}
+}

@@ -1,0 +1,454 @@
+.hero {
+	height: 300px;
+	background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+    top: -8px !important;
+}
+.committee .hero {
+	height: 300px;
+	background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+    top: -8px !important;
+}
+.hero-large {
+	height: 360px;
+	
+	img {
+		max-width: none;
+		width: 100%;
+	}
+}
+.hero-small {
+	display: none;
+	height: 300px;
+	
+	img {
+		max-width: none;
+	}
+}
+.senator-pic {
+	background-repeat: no-repeat;
+	float: left;
+	width: 250px;
+	height: 250px;
+	background-size: contain;
+	position: absolute;
+	bottom: 0px;
+	
+	img {
+		width: 100%;
+	}
+}
+.theme-1 .senator-info {
+	background-color: rgba($white, .7);
+	width: 65%;
+	max-width: 750px;
+    padding: 30px;
+    float: right;
+	position: relative;
+	top: -300px;
+}
+.theme-2 .senator-info {
+	background-color: rgba($white, .7);
+	width: 65%;
+	max-width: 750px;
+    padding: 30px;
+    float: right;
+	position: relative;
+    top: -300px;
+	
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: -13px;
+		left: -13px;
+		right: -13px;
+		bottom: -13px;
+		border: 4px solid rgba($white, .7);
+	}
+}
+.theme-2 .gop-info {
+	background-color: rgba($white, .7);
+	width: 65%;
+	max-width: 560px;
+	margin: 0px auto;
+    padding: 30px;
+	position: relative;
+	@include centerer;
+	
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: -13px;
+		left: -13px;
+		right: -13px;
+		bottom: -13px;
+		border: 4px solid rgba($white, .7);
+	}
+}
+.theme-1 .senator-name {
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: $red;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.theme-2 .senator-name {
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $orange;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.theme-2.committee .senator-name {
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $blue-theme-2;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.theme-2 .committee-head {
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $blue-theme-2;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.theme-2 .gop-title {
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 30px;
+	color: $burgundy;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.theme-1 .district {
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: $red;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.theme-2 .district {
+	font-size: 25px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $orange;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.theme-2 .committee-title {
+	font-size: 25px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $blue-theme-2;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.theme-1 .counties {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: $red;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.theme-2 .counties {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $orange;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.theme-2 .committee-name {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: $blue-theme-2;
+	text-shadow: 1px 1px 0px $white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.theme-2.committee .hero.no-headshot .senator-info {
+	float: none;
+	margin: 0px auto;
+	padding: 50px;
+	@include centerer;
+	
+	p {
+		margin-bottom: 0px;
+	}
+}
+
+/* Two Senators */
+.two-senators .container {
+	position: relative;
+}
+.two-senators .senator-pic-1 {
+	background-repeat: no-repeat;
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    position: absolute;
+    bottom: 233px;
+	
+	img {
+		width: 100%;
+	}
+}
+.two-senators .senator-pic-2 {
+	background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    position: absolute;
+    bottom: 233px;
+	right: 0px;
+	
+	img {
+		width: 100%;
+	}
+}
+.two-senators .senator-info {
+	width: 100%;
+    float: none;
+    margin: 0px auto;
+	padding: 20px;
+	position: relative;
+    z-index: 100;
+    max-width: 450px;
+}
+.two-senators .committee-head {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.two-senators .committee-title {
+	font-size: 22px;
+	margin-bottom: 7px;
+}
+
+/* Three Senators */
+.three-senators .container {
+	position: relative;
+}
+.three-senators .senator-pic-1 {
+	background-repeat: no-repeat;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    bottom: 281px;
+	
+	img {
+		width: 100%;
+	}
+}
+.three-senators .senator-pic-2 {
+	background-repeat: no-repeat;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    bottom: 281px;
+	left: 130px;
+	
+	img {
+		width: 100%;
+	}
+}
+.three-senators .senator-pic-3 {
+	background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    bottom: 281px;
+	right: 0px;
+	
+	img {
+		width: 100%;
+	}
+}
+.three-senators .senator-info {
+	width: 100%;
+    float: none;
+    margin: 0px auto;
+	padding: 20px;
+	position: relative;
+    z-index: 100;
+    max-width: 450px;
+	left: 55px;
+	top: -310px;
+}
+.three-senators .committee-head {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.three-senators .committee-title {
+	font-size: 22px;
+	margin-bottom: 7px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1920px) {
+	.hero-large {
+		img {
+			width: auto;
+			height: 300px;
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.theme-1 .senator-pic, .theme-2 .senator-pic {
+		width: 250px;
+		height: 250px;
+	}
+}
+@media screen and (max-width: 1060px) {
+	.theme-1 .senator-info, .theme-2 .senator-info {
+    	transform: translateY(-15%);
+		top: -270px;
+	}
+	.theme-1 .senator-name, .theme-2 .senator-name, .committee-head {
+		font-size: 24px;
+    	line-height: 24px;
+	}
+	.committee-head {
+		font-size: 30px;
+	}
+	.theme-1 .district, .theme-2 .district, .committee-title {
+		font-size: 20px;
+    	line-height: 20px;
+	}
+	.theme-1 .counties, .theme-2 .counties, .committee-name {
+		font-size: 16px;
+    	line-height: 16px;
+	}
+	.theme-1 .hero, .theme-2 .hero {
+		height: 300px;
+	}
+}
+@media screen and (max-width: 850px) {
+	.theme-1 .senator-pic, .theme-2 .senator-pic {
+		width: 200px;
+		height: 200px;
+	}
+}
+@media screen and (max-width: 845px) {
+	.hero {
+		margin-top: -35px;
+	}
+	.style-guide .hero {
+		margin-top: 0px;
+	}
+	.three-senators .senator-info {
+		left: 0px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.theme-1 .senator-pic, .theme-2 .senator-pic {
+		display: none;
+	}
+	.theme-1 .senator-info, .theme-2 .senator-info, .theme-2 .gop-info {
+		width: 100%;
+	}
+	.hero.no-headshot .senator-info {
+		width: auto !important;
+	}
+}
+@media screen and (max-width: 550px) {
+	.hero {
+		margin-top: 6px;
+	}
+	.information-bar {
+		.search-form {
+			margin-top: -18px;
+		}
+		.fa-search {
+			top: 24px !important;
+		}
+		.search {
+			width: 100% !important;
+			margin-left: 0px;
+		}
+	}
+	.theme-1 .hero, .theme-2 .hero {
+		height: 200px;
+	}
+	.hero.no-headshot .senator-info {
+		padding: 30px !important;
+		width: 100% !important;
+	}
+	.committee-head, .theme-2 .gop-title { 
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.theme-1 .district, .theme-2 .district, .theme-1 .counties, .theme-2 .counties, .committee-head, .committee-title {
+		display: none;
+	}
+	.theme-1 .senator-name, .theme-2 .senator-name, .theme-2 .committee-head {
+		margin-bottom: 0px;
+	}
+	.committee-name {
+		font-size: 30px !important;
+	}
+	.theme-1 .senator-info, .theme-2 .senator-info {
+    	@include centerer;
+	}
+	.hero .container {
+		position: relative;
+		margin-top: -210px;
+	}
+	.hero-large {
+		display: none;
+	}
+	.hero-small {
+		display: block;
+	}
+	.two-senators .senator-pic-1, .two-senators .senator-pic-2, .three-senators .senator-pic-1, .three-senators .senator-pic-2, .three-senators .senator-pic-3 {
+		display: none;
+	}
+}

@@ -1,0 +1,257 @@
+.theme-1 .search-result {
+	padding: 30px;
+	transition: all .2s linear;
+	border-left: 5px solid $white;
+	background-color: $white;
+	margin-bottom: 30px;
+	
+	&:nth-of-type(3n+1) {
+		&:hover {
+			border-left: 5px solid $red;
+		}
+	}
+	&:nth-of-type(3n+2) {
+		&:hover {
+			border-left: 5px solid $blue-theme-1;
+		}
+	}
+	&:nth-of-type(3n+3) {
+		&:hover {
+			border-left: 5px solid $yellow;
+		}
+	}
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+			
+		a {
+			color: $blue-theme-1;
+		}
+	}
+	.search-video {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.search-audio {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+		background-color: #303030;
+	}
+	.categories {
+		margin-top: 30px;
+		margin-bottom: -20px;
+		clear: both;
+		
+		p {
+			font-weight: 700;
+		}
+		a {
+			background-color: #EFEFEF;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			border-radius: 5px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $red;
+				color: $white;
+			}
+		}
+	}
+}
+.theme-2 .search-result {
+	padding: 30px;
+	transition: all .2s linear;
+	border-left: 5px solid #f9f9f9;
+	background-color: #f9f9f9;
+	margin-bottom: 30px;
+	
+	&:nth-child(odd) {
+		&:hover {
+			border-left: 5px solid $blue-theme-2;
+		}
+	}
+	&:nth-child(even) {
+		&:hover {
+			border-left: 5px solid $orange;
+		}
+	}
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+			
+		a {
+			color: $orange;
+		}
+	}
+	.search-video {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.search-audio {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+		background-color: #303030;
+	}
+	.categories {
+		margin-top: 30px;
+		margin-bottom: -20px;
+		clear: both;
+		
+		p {
+			font-weight: 700;
+		}
+		a {
+			background-color: #E5E3E3;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $blue-theme-2;
+				color: $white;
+			}
+		}
+	}
+}
+.theme-2.committee .search-result {
+	padding: 30px;
+	transition: all .2s linear;
+	border-left: 5px solid #f9f9f9;
+	background-color: #f9f9f9;
+	margin-bottom: 30px;
+	
+	&:nth-child(odd) {
+		&:hover {
+			border-left: 5px solid $orange;
+		}
+	}
+	&:nth-child(even) {
+		&:hover {
+			border-left: 5px solid $blue-theme-2;
+		}
+	}
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+			
+		a {
+			color: $blue-theme-2;
+		}
+	}
+	.search-video {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.search-audio {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+		background-color: #303030;
+	}
+	.categories {
+		margin-top: 30px;
+		margin-bottom: -20px;
+		clear: both;
+		
+		p {
+			font-weight: 700;
+		}
+		a {
+			background-color: #E5E3E3;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $orange;
+				color: $white;
+			}
+		}
+	}
+}
+.theme-2.pasengop .search-result {
+	padding: 30px;
+	transition: all .2s linear;
+	border-left: 5px solid #f9f9f9;
+	background-color: #f9f9f9;
+	margin-bottom: 30px;
+	
+	&:nth-child(odd) {
+		&:hover {
+			border-left: 5px solid $burgundy;
+		}
+	}
+	&:nth-child(even) {
+		&:hover {
+			border-left: 5px solid $blue-theme-2;
+		}
+	}
+	h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+			
+		a {
+			color: $blue-theme-2;
+		}
+	}
+	.search-video {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.search-audio {
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+		margin-bottom: 40px;
+		background-color: #303030;
+	}
+	.categories {
+		margin-top: 30px;
+		margin-bottom: -20px;
+		clear: both;
+		
+		p {
+			font-weight: 700;
+		}
+		a {
+			background-color: #E5E3E3;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 10px;
+			line-height: 55px;
+			transition: background-color .2s linear;
+			
+			&:hover {
+				background-color: $burgundy;
+				color: $white;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.search-video, .search-audio {
+		width: 100% !important;
+		margin-top: 20px;
+	}
+}
