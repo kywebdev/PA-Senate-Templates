@@ -6,6 +6,9 @@
 	margin-bottom: 30px;
 	margin-top: -30px;
 }
+.style-guide.theme-1 .callout-container, .style-guide.theme-2 .callout-container {
+	margin-top: 30px;
+}
 .theme-1 .callout {
 	width: 47%;
 	margin-right: 0%;
@@ -138,7 +141,7 @@
 	opacity: 1;
 	display: block;
 	transition: all .2s linear;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 .theme-1 .callout-heading {
 	width: 100%;

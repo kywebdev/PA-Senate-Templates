@@ -33,7 +33,7 @@ $(document).ready(function(){
 <header class="site-header">
 	<div class="container">
     	<h1>PA Senate Style Guidelines</h1>
-        	<a href="index-2.html"><button class="design2">See Design 2</button></a>
+        	<a href="style-guide-theme-2.html"><button class="design2">See Design 2</button></a>
     </div>
 </header>
 <div class="container">
@@ -58,7 +58,7 @@ $(document).ready(function(){
 </div>
 <div class="mainContent">
 	<div class="container">
-    	<p>These are the styles that should be used on senator sites only. To see committee/caucus and alternate senator styles, check out <a href="index-2.html">this design</a>.</p>
+    	<p>These are the styles that should be used on senator sites only. To see committee/caucus and alternate senator styles, check out <a href="style-guide-theme-2.html">this design</a>.</p>
         
 <!-- COLOR PALETTE -->
         
@@ -224,7 +224,7 @@ CSS: $white</pre>
             <br class="clear" />
             <h2>Social Media Blocks</h2>
             	<p>Senator sites use a three-column layout to display their social media feeds and a featured video. Here's an example of what this would look like.</p>
-                <div class="block-container">
+                <div class="block-container social-blocks">
                     <div class="third-block social-block">
                         <h3>Tweets by <span class="tw-user">@senbartolotta</span></h3>
                             <div class="media tw-feed">
@@ -686,7 +686,9 @@ CSS: $white</pre>
                 </div>
                 <br /><br />
             <form>
-                <label for="comments">Questions and Comments</label><textarea id="comments"></textarea>
+                <div>
+                    <label for="comments">Questions and Comments</label><textarea id="comments"></textarea>
+                </div>
             </form>
             <div class="details">
                     <pre>textarea {
@@ -840,12 +842,8 @@ CSS: $white</pre>
             <h2>Hero Area</h2>
             	<p>The hero area consists of a background image, a headshot of the senator on the left, and a translucent box of essential senator information on the right.</p>
             	<div class="hero">
-                	<div class="hero-small">
-                		<img src="img/bartolotta-mobile.png" alt="" />
-                    </div>
-                	<div class="hero-large">
-                		<img src="img/bartolotta-bg.jpg" alt="" />
-                    </div>
+                	<div class="hero-small" style="background-image: url('img/bartolotta-mobile.png');"></div>
+                    <div class="hero-large" style="background-image: url('img/bartolotta-bg.jpg');"></div>
                 	<div class="container">
                         <div class="senator-pic">
                         	<img src="img/camera-bartolotta.png" alt="" />

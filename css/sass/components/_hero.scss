@@ -20,19 +20,16 @@
 }
 .hero-large {
 	height: 360px;
-	
-	img {
-		max-width: none;
-		width: 100%;
-	}
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 .hero-small {
 	display: none;
 	height: 300px;
-	
-	img {
-		max-width: none;
-	}
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .senator-pic {
 	background-repeat: no-repeat;
@@ -333,14 +330,6 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 1920px) {
-	.hero-large {
-		img {
-			width: auto;
-			height: 300px;
-		}
-	}
-}
 @media screen and (max-width: 1200px) {
 	.theme-1 .senator-pic, .theme-2 .senator-pic {
 		width: 250px;
